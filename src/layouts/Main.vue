@@ -1,6 +1,5 @@
 <template>
   <div class="main">
-    <Nav />
     <slot></slot>
   </div>
 </template>
@@ -24,6 +23,10 @@
     font-family: 'Roboto', sans-serif;
   }
 
+  p {
+    line-height: 1.2;
+  }
+
   .container {
     width: 100%;
     margin-left: auto;
@@ -39,7 +42,7 @@
 
   .row [class^="col"] {
     float: left;
-    margin: 0 2%;
+    margin: 0 6%;
     min-height: 0.125rem;
   }
 
@@ -69,7 +72,7 @@
   .col-10,
   .col-11,
   .col-12 {
-    width: 96%;
+    width: 88%;
   }
 
   @media only screen and (min-width: 1024px) {
@@ -81,8 +84,8 @@
     .col-1 { width: calc((96% / 12) - (2% * 11 / 12)); }
     .col-2 { width: calc((96% / 6) - (2% * 10 / 12)); }
     .col-3 { width: (96% / 4) - (2% * 9 / 12); }
-    .col-4 { width: (96% / 3) - (2% * 8 / 12); }
-    .col-5 { width: (96% / (12 / 5)) - (2% * 7 / 12); }
+    .col-4 { width: calc((96% / 3) - (2% * 8 / 12)); }
+    .col-5 { width: calc(96% / (12 / 5) - (2% * 7 / 12)); }
     .col-6 { width: calc((96% / 2) - (2% * 6 / 12)); }
     .col-7 { width: (96% / (12 / 7)) - (2% * 5 / 12); }
     .col-8 { width: (96% / (12 / 8)) - (2% * 4 / 12); }
@@ -97,6 +100,11 @@
 
     .hidden-ms {
       display: none;
+    }
+
+
+    .row [class^="col"] {
+      margin: 0 2%;
     }
   }
 

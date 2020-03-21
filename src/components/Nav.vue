@@ -107,32 +107,6 @@
     align-items: center;
   }
 
-  .menu-button {
-    height: 12px;
-    width: 20px;
-    cursor: pointer;
-    position: relative;
-    
-  }
-
-  .menu-button:after,
-  .menu-button:before {
-    content: '';
-    height: 2px;
-    width:100%;
-    position: absolute;
-    background: red;
-    left:0;
-    bottom:0;
-    transform: none;
-    transition: transform 2s ease;
-  }
-
-  .menu-button:before {
-    top: 0;
-    bottom: unset;
-  }
-
   .home-icon-container {
     width: 70%;
     float:left;
@@ -159,8 +133,8 @@
 
 
   a.target-burger {
-	 margin: 1.125em;
-	 width: 3.25em;
+	 margin: 1.125em 6%;
+   width: 1.625em;
 	 height: 3.25em;
 	 position: absolute;
 	 display: block;
@@ -208,6 +182,14 @@
  a.target-burger ul.buns li.bun:last-child {
 	 -webkit-transform: translateY(3.75px) translateZ(0);
 	 transform: translateY(3.75px) translateZ(0);
+}
+
+@media only screen and (min-width: 1024px) {
+
+  a.target-burger {
+	  margin: 1.125em;
+   	width: 3.25em;
+  }
 }
  
 

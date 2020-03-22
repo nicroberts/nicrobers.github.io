@@ -95,6 +95,14 @@
     .text {
       margin: 0;
     }
+
+    .image-copy.right {
+      display: flex;
+    }
+
+    .right .image {
+      order: 2;
+    }
   }
 
   @media only screen and (min-width: 1024px) {
@@ -102,6 +110,7 @@
     .text {
       font-size: 35px;
     }
+
   }
 
 </style>

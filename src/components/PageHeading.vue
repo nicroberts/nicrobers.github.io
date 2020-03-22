@@ -7,8 +7,18 @@
             <h1>{{ $props.title }}</h1>
           </div>
           <div class="col-5" >
-            <p class="sub">{{ $props.sub }}</p>
-            <p class="para">{{ $props.para }}</p>
+            <p v-if="$props.sub" class="sub">{{ $props.sub }}</p>
+            <p v-if="$props.para" class="para">{{ $props.para }}</p>
+            <ul class="list" v-if="$props.list">
+              <li v-for="item in $props.list" >
+                {{item}}
+              </li>
+            </ul>
+            <ul class="list-two" v-if="$props.list && $props.listTwo">
+              <li v-for="item in $props.listTwo" >
+                {{item}}
+              </li>
+            </ul>
           </div>
         </div>
     </div>
@@ -28,7 +38,9 @@
       title: String,
       sub: String,
       para: String,
-      bg: String
+      bg: String,
+      list: Array,
+      listTwo: Array
     },
     components: {
     },
@@ -66,6 +78,20 @@
     margin: 15px 0 0 ;
   }
 
+  .list, .list-two  {
+    list-style: none;
+    width: 100%;
+  }
+
+  .list {
+    margin: 65px 0 0 ;
+  }
+
+  .list li, .list-two li  {
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 20px;
+  }
+
 
 
 @media only screen and (min-width: 768px) {
@@ -78,14 +104,16 @@
     margin: 0 0 2rem;
   }
 
-  .sub {
+  .sub, .list {
     width: 50%;
     margin: 0;
+    float: left;
   }
 
-  .para {
+  .para, .list-two {
     width: 40%;
     margin: 0;
+    float: right;
   }
 }
 

@@ -15,12 +15,6 @@
               </v-link>
             </div>
 
-            <!--buns
-
-            <div class="menu-button-container">
-              <div class="menu-button"  v-bind:class="{cross: isNavOpen}" @click="toggleNav"></div>
-            </div> -->
-
             <a class="target-burger" v-bind:class="{toggled: isNavOpen}" @click="toggleNav">
               <ul class="buns">
                 <li class="bun"></li>

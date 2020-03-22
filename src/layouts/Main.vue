@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main" >
     <slot></slot>
   </div>
 </template>
@@ -10,12 +10,14 @@
 
   export default {
     components: {
-      VLink, Nav
+      VLink
     }
   }
 </script>
 
 <style scss>
+
+
 
   html, body, p, h1, h2, h3, a, div, ul, li {
     margin: 0;
@@ -83,7 +85,7 @@
 
     .col-1 { width: calc((96% / 12) - (2% * 11 / 12)); }
     .col-2 { width: calc((96% / 6) - (2% * 10 / 12)); }
-    .col-3 { width: (96% / 4) - (2% * 9 / 12); }
+    .col-3 { width: calc((96% / 4) - (2% * 9 / 12)); }
     .col-4 { width: calc((96% / 3) - (2% * 8 / 12)); }
     .col-5 { width: calc(96% / (12 / 5) - (2% * 7 / 12)); }
     .col-6 { width: calc((96% / 2) - (2% * 6 / 12)); }

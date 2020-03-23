@@ -1,7 +1,14 @@
 <template>
   <main-layout>
     <Nav />
-    <p>Work page</p>
+       <div class="container work">
+    <div class="row">
+      <div class="col-1 hidden-sm"></div>
+      <div class="col-10">
+        <p>Work</p>
+      </div>
+    </div>
+  </div>
   </main-layout>
 </template>
 
@@ -21,7 +28,11 @@
   p {
     height: 100vh;
     width: 100%;
-    background: green;
+    background: #F2F2F2;
+  }
+
+    .container.work {
+    background: #F2F2F2;
   }
 
 </style>

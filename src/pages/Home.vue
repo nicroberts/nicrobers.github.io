@@ -5,7 +5,8 @@
     <div class="row">
       <div class="col-1 hidden-sm"></div>
       <div class="col-10">
-        <p>Welcome home</p>
+        <a href="/topshop">Welcome home</a>
+
       </div>
     </div>
   </div>
@@ -28,7 +29,11 @@
   p {
     height: 100vh;
     width: 100%;
-    background: blue;
+    background: #F2F2F2;
+  }
+
+  .container.home {
+    background: #F2F2F2;
   }
 
 </style>

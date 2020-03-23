@@ -3,8 +3,8 @@
     <Nav />
     <PageHeading 
       :title="'About.'"
-      :sub="'Uruoi concentrates on the core elements of skincare to combine an authentically Japanese minimalist philosophy and powerful ingredients backed by science.'"
-      :para="'This project was all about minimalism. My main objective was to come up with a design to support brand’s philosophy as well as bring it to the digital world in the best shape. My main objective was to come up with a design to support brand’s philosophy as well as bring it to the digital world in the best shape.'"
+      :sub="'Senior Designer with over 8 years experience designing for ecommerce brands, publication houses and design agencies.'"
+      :para="'With my experience of designing in house for large fashion and lifestyle brands and my knowledge of ecommerce as a whole, I am greatly successful at designing effective solutions that have proved their value whilst taking into account the business needs and priorities.  I have a diverse background of experience and always excited by new and interesting projects.'"
       :bg="'#fff'"
     />
 

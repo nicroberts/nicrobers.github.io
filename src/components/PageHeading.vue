@@ -59,7 +59,7 @@
 
   h1 {
     font-family: 'Roboto-bold', sans-serif;
-    font-size: 70px;
+    font-size: 55px;
   }
 
 

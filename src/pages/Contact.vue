@@ -67,7 +67,7 @@
 
   h1 {
     font-family: 'Roboto-bold', sans-serif;
-    font-size: 70px;
+    font-size: 55px;
     margin: 60px 0;
   }
 
@@ -109,7 +109,7 @@
     }
 
     .address {
-      font-size: 35px;
+      font-size: 30px;
     }
   }
 

@@ -9,7 +9,7 @@
 
      <ImageCopy 
       :right="false"
-      :image="'https://i.ytimg.com/vi/z1rtviBRNTw/maxresdefault.jpg'"
+      :image="require('../images/asos-drop-down.jpg')"
       :head="'The Approach.'"
       :text="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
     />
@@ -20,6 +20,11 @@
       :bg="'#fff'"
     />
 
+    <FullImage 
+      :images="imageArray"
+      :bg="'#CDB5A6'"
+    />
+
   </main-layout>
 </template>
 
@@ -28,11 +33,43 @@
   import Nav from '../components/Nav.vue'
   import PageHeading from '../components/PageHeading.vue'
   import ImageCopy from '../components/ImageCopy.vue'
+  import FullImage from '../components/FullImage.vue'
 
   export default {
 
+    data: function () {
+      return {
+          imageArray: [
+            {
+              src: require('../images/asos-drop-down.jpg'),
+              alt: "ASOS drop down"
+            },
+            {
+              src: require('../images/asos-drop-down.jpg'),
+              alt: "ASOS drop down"
+            },
+            {
+              src: require('../images/asos-drop-down.jpg'),
+              alt: "ASOS drop down"
+            },
+            {
+              src: require('../images/asos-drop-down.jpg'),
+              alt: "ASOS drop down"
+            },
+            {
+              src: require('../images/asos-drop-down.jpg'),
+              alt: "ASOS drop down"
+            },
+            {
+              src: require('../images/asos-drop-down.jpg'),
+              alt: "ASOS drop down"
+            }
+          ]
+      }
+    },
+
     components: {
-      MainLayout, PageHeading, Nav, ImageCopy,
+      MainLayout, PageHeading, Nav, ImageCopy, FullImage
     }
   }
 </script>

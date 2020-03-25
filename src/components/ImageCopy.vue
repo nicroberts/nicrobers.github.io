@@ -1,8 +1,12 @@
 <template>
   <div class="image-copy" :class="{ right:  $props.right }" v-bind:style="{ backgroundColor:  $props.bg }">
 
-    <div class="image" v-bind:style="{ backgroundImage: 'url(' + $props.image + ')' }"></div>
+    <div v-if="!$props.imageBg" class="image" v-bind:style="{ backgroundImage: 'url(' + $props.image + ')' }"></div>
     
+    <div v-if="$props.imageBg" class="image-container" v-bind:style="{ backgroundColor:  $props.imageBg }">
+      <img :src="$props.image" :alt="$props.alt" >
+    </div>
+
     <div class="text-container">
       <h2 v-if="$props.head" class="header">{{ $props.head }}</h2>
       <p v-if="$props.text" class="text">{{ $props.text }}</p>
@@ -22,9 +26,11 @@
     props: {
       right: Boolean,
       image: String,
+      alt: String,
       text: String,
       head: String,
-      bg: String
+      bg: String,
+      imageBg: String,
     },
     components: {
     },
@@ -40,12 +46,23 @@
     width: 100%;
   }
 
-  .image {
+  .image,
+  .image-container {
     width: 100%;
     height: 375px;
     background-position: center;
     background-size: cover;
     float: left;
+  }
+
+  .image-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    max-height: 75%;
   }
 
   .text-container {
@@ -68,7 +85,8 @@
 
   @media only screen and (min-width: 768px) {
 
-    .image {
+    .image,
+    .image-container {
       width: 50%;
       height: 100%;
     }
@@ -100,7 +118,8 @@
       display: flex;
     }
 
-    .right .image {
+    .right .image,
+    .right .image-container {
       order: 2;
     }
   }

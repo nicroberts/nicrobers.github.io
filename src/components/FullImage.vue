@@ -1,7 +1,7 @@
 <template>
   <div class="full-image" v-bind:style="{ backgroundColor:  $props.bg }">
     <div class="container">
-      <div class="row"> 
+      <div class="row flex"> 
         <div class="col-1 hidden-sm"></div>
         <div class="col-10">
 
@@ -47,19 +47,20 @@
     justify-content:center;
   }
 
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
   ul {
     display: grid;
     width: 100%;
     list-style: none;
-    row-gap: 30px; 
-    column-gap: 30px; 
-    grid-template-columns: repeat(6, calc(16.66666666% - 25px));
+    row-gap: 26px; 
+    column-gap: 26px; 
+    grid-template-columns: repeat(2, calc(50% - 13px));
+    margin: 85px 0;
   }
-
-  li {
-    height: 381px;
-  }
-
 
   img {
     width: 100%;
@@ -73,13 +74,13 @@
       min-height: 500px;
       max-height: 800px;
     }
-  }
 
-
-
-  @media only screen and (min-width: 1024px) {
-
-
+    ul {
+      grid-template-columns: repeat(6, calc(16.66666666% - 25px));
+      row-gap: 30px; 
+      column-gap: 30px; 
+      margin: 0;
+    }
 
   }
 

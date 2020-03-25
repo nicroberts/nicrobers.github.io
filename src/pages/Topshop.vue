@@ -7,8 +7,22 @@
       :bg="'#fff'"
     />
 
-     <ImageCopy 
-      :right="false"
+     <TwoCentredImages 
+      :images="twoImageArray"
+      :bg="'#B000B5'"
+      :bottom="false"
+     />
+
+      <TwoCentredImages 
+      :images="twoImageArray"
+      :bg="'#B000B5'"
+      :bottomLeft="true"
+      :bottomRight="false"
+     />
+
+    <ImageCopy 
+      :right="true"
+      :imageBg="'#bada55'"
       :image="require('../images/asos-drop-down.jpg')"
       :head="'The Approach.'"
       :text="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
@@ -34,6 +48,7 @@
   import PageHeading from '../components/PageHeading.vue'
   import ImageCopy from '../components/ImageCopy.vue'
   import FullImage from '../components/FullImage.vue'
+  import TwoCentredImages from '../components/TwoCentredImages.vue'
 
   export default {
 
@@ -64,12 +79,22 @@
               src: require('../images/asos-drop-down.jpg'),
               alt: "ASOS drop down"
             }
+          ],
+          twoImageArray: [
+            {
+              src: require('../images/asos-drop-down.jpg'),
+              alt: "ASOS drop down"
+            },
+            {
+              src: require('../images/asos-drop-down.jpg'),
+              alt: "ASOS drop down"
+            }
           ]
       }
     },
 
     components: {
-      MainLayout, PageHeading, Nav, ImageCopy, FullImage
+      MainLayout, PageHeading, Nav, ImageCopy, FullImage, TwoCentredImages
     }
   }
 </script>

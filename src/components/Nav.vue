@@ -59,9 +59,11 @@
     methods: {
       toggleNav() {
         this.isNavOpen = !this.isNavOpen;
+        document.body.classList.toggle('menu-open');
       },
       closeNav() {
         this.isNavOpen = false;
+        document.body.classList.remove('menu-open');
       }
     }
   }

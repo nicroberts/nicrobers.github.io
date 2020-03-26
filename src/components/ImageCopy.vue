@@ -63,6 +63,7 @@
 
   img {
     max-height: 75%;
+    max-width: 90%;
   }
 
   .text-container {

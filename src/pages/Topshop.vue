@@ -1,37 +1,55 @@
 <template>
   <main-layout>
     <Nav />
-      <PageHeading 
+
+    <ProjectHeading 
       :title="'Topshop.'"
+      :categories="'UI DESIGN | UX DESIGN | VISUAL IDENTITY'"
+      :sub="'Website redesign.'"
       :para="'Responsive site redesign of Topshop.com, focusing on improving the experience of the shopping journey including product listing pages, product description pages, bag drawer and menus.'"
       :bg="'#fff'"
     />
 
-     <TwoCentredImages 
-      :images="twoImageArray"
-      :bg="'#B000B5'"
-      :bottom="false"
-     />
-
-      <TwoCentredImages 
-      :images="twoImageArray"
-      :bg="'#B000B5'"
-      :bottomLeft="true"
-      :bottomRight="false"
-     />
-
     <ImageCopy 
-      :right="true"
-      :imageBg="'#bada55'"
-      :image="require('../images/asos-drop-down.jpg')"
+      :right="false"
+      :imageBg="'#CDC6BE'"
+      :image="require('../images/topshop-image.jpg')"
       :head="'The Approach.'"
       :text="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
     />
+
+    <TwoCentredImages 
+      :images="PLPImageArray"
+      :bg="'#3F3F3F'"
+      :bottomLeft="true"
+      :bottomRight="false"
+     />
 
     <PageHeading 
       :sub="'Dynamic image focused product listing pages.'"
       :para="'Image is key for topshop.com, so working with the Art Director we established a fresher feeling page by introducing more types of shots to the product photography.  Creating different experiences across devices allows a truly tailored experience for the customer.'"
       :bg="'#fff'"
+    />
+
+      <TwoCentredImages 
+      :images="PDPImageArray"
+      :bg="'#CDC6BE'"
+      :bottomLeft="false"
+      :bottomRight="false"
+     />
+
+    <PageHeading 
+      :sub="'Dynamic image focused product listing pages.'"
+      :para="'Image is key for topshop.com, so working with the Art Director we established a fresher feeling page by introducing more types of shots to the product photography.  Creating different experiences across devices allows a truly tailored experience for the customer.'"
+      :bg="'#fff'"
+    />
+
+    <ImageCopy 
+      :right="true"
+      :imageBg="'#CDC6BE'"
+      :image="require('../images/topshop-image.jpg')"
+      :head="'The Approach.'"
+      :text="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
     />
 
     <FullImage 
@@ -46,6 +64,7 @@
   import MainLayout from '../layouts/Main.vue'
   import Nav from '../components/Nav.vue'
   import PageHeading from '../components/PageHeading.vue'
+  import ProjectHeading from '../components/ProjectHeading.vue'
   import ImageCopy from '../components/ImageCopy.vue'
   import FullImage from '../components/FullImage.vue'
   import TwoCentredImages from '../components/TwoCentredImages.vue'
@@ -56,37 +75,27 @@
       return {
           imageArray: [
             {
-              src: require('../images/asos-drop-down.jpg'),
-              alt: "ASOS drop down"
-            },
-            {
-              src: require('../images/asos-drop-down.jpg'),
-              alt: "ASOS drop down"
-            },
-            {
-              src: require('../images/asos-drop-down.jpg'),
-              alt: "ASOS drop down"
-            },
-            {
-              src: require('../images/asos-drop-down.jpg'),
-              alt: "ASOS drop down"
-            },
-            {
-              src: require('../images/asos-drop-down.jpg'),
-              alt: "ASOS drop down"
-            },
-            {
-              src: require('../images/asos-drop-down.jpg'),
+              src: require('../images/topshop-filters.jpg'),
               alt: "ASOS drop down"
             }
           ],
-          twoImageArray: [
+          PLPImageArray: [
             {
-              src: require('../images/asos-drop-down.jpg'),
+              src: require('../images/topshop-plp-desktop.jpg'),
               alt: "ASOS drop down"
             },
             {
-              src: require('../images/asos-drop-down.jpg'),
+              src: require('../images/topshop-plp-mob.jpg'),
+              alt: "ASOS drop down"
+            }
+          ],
+          PDPImageArray: [
+            {
+              src: require('../images/topshop-pdp-dekstop.jpg'),
+              alt: "ASOS drop down"
+            },
+            {
+              src: require('../images/topshop-pdp-mob.jpg'),
               alt: "ASOS drop down"
             }
           ]
@@ -94,7 +103,7 @@
     },
 
     components: {
-      MainLayout, PageHeading, Nav, ImageCopy, FullImage, TwoCentredImages
+      MainLayout, PageHeading, Nav, ImageCopy, FullImage, TwoCentredImages, ProjectHeading
     }
   }
 </script>

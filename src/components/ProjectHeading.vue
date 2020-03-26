@@ -6,19 +6,11 @@
           <div class="col-4">
             <h1>{{ $props.title }}</h1>
           </div>
-          <div class="col-5" >
+          <div class="col-2 hidden-sm"></div>
+          <div class="col-4" >
+            <p v-if="$props.categories" class="categories">{{ $props.categories }}</p>
             <p v-if="$props.sub" class="sub">{{ $props.sub }}</p>
             <p v-if="$props.para" class="para">{{ $props.para }}</p>
-            <ul class="list" v-if="$props.list">
-              <li v-for="item in $props.list" >
-                {{item}}
-              </li>
-            </ul>
-            <ul class="list-two" v-if="$props.list && $props.listTwo">
-              <li v-for="item in $props.listTwo" >
-                {{item}}
-              </li>
-            </ul>
           </div>
         </div>
     </div>
@@ -35,11 +27,10 @@
     },
     props: {
       title: String,
+      categories: String,
       sub: String,
       para: String,
       bg: String,
-      list: Array,
-      listTwo: Array
     },
     components: {
     },
@@ -59,37 +50,25 @@
   h1 {
     font-family: 'Roboto-bold', sans-serif;
     font-size: 55px;
+    margin: 0 0 45px 0;
   }
 
+  .categories {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0 0 55px 0;
+  }
 
   .sub {
     font-family: 'Roboto-bold', sans-serif;
     font-size: 20px;
-    float: left;
-    width: 100%;
-    margin: 65px 0 0 ;
+    margin: 0 0 15px 0;
   }
 
   .para {
     font-size: 12px;
-    float:right;
-    width: 100%;
-    margin: 15px 0 0 ;
   }
 
-  .list, .list-two  {
-    list-style: none;
-    width: 100%;
-  }
-
-  .list {
-    margin: 65px 0 0 ;
-  }
-
-  .list li, .list-two li  {
-    font-family: 'Roboto-bold', sans-serif;
-    font-size: 20px;
-  }
 
 
 
@@ -103,17 +82,11 @@
     margin: 0 0 2rem;
   }
 
-  .sub, .list {
-    width: 50%;
-    margin: 0;
-    float: left;
+  .categories {
+
+    margin: 0 0 40px 0;
   }
 
-  .para, .list-two {
-    width: 40%;
-    margin: 0;
-    float: right;
-  }
 }
 
 </style>

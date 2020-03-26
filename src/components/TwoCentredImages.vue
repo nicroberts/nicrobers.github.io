@@ -52,6 +52,7 @@
 
   img {
     max-height: 75%;
+    max-width: 90%;
   }
 
   @media only screen and (min-width: 768px) {

@@ -5,7 +5,7 @@
         <div class="col-1 hidden-sm"></div>
         <div class="col-10">
 
-          <ul v-if="$props.images.length > 0">
+          <ul v-if="$props.images.length > 0" :class="{one: $props.images.length === 1, four: $props.images.length === 4}">
             <li v-for="image in $props.images">
                 <img v-bind:src="image.src" :alt="image.alt">
             </li>
@@ -55,11 +55,16 @@
   ul {
     display: grid;
     width: 100%;
+    max-height: 75%;
     list-style: none;
     row-gap: 26px; 
     column-gap: 26px; 
     grid-template-columns: repeat(2, calc(50% - 13px));
     margin: 85px 0;
+  }
+
+  ul.one {
+    grid-template-columns: repeat(1, 100%);
   }
 
   img {
@@ -80,6 +85,10 @@
       row-gap: 30px; 
       column-gap: 30px; 
       margin: 0;
+    }
+
+    ul.four {
+      grid-template-columns: repeat(4, calc(25% - 20px));
     }
 
   }

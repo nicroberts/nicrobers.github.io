@@ -3,5 +3,6 @@ export default {
   '/about': 'About',
   '/contact': 'Contact',
   '/work': 'Work',
-  '/topshop': 'Topshop'
+  '/topshop': 'Topshop',
+  '/asos': 'ASOS'
 }

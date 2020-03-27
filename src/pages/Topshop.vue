@@ -10,6 +10,13 @@
       :bg="'#fff'"
     />
 
+    <TwoCentredImages 
+      :images="PLPImageArray"
+      :bg="'#3F3F3F'"
+      :bottomLeft="true"
+      :bottomRight="false"
+     />
+
     <ImageCopy 
       :right="false"
       :alt="true"
@@ -57,7 +64,7 @@
 
     <FullImage 
       :images="imageArray"
-      :bg="'#CDB5A6'"
+      :bg="'#CDC6BE'"
     />
 
     <NextProject
@@ -86,7 +93,7 @@
       return {
           imageArray: [
             {
-              src: require('../images/topshop-filters.jpg'),
+              src: require('../images/topshop-plp-nav.png'),
               alt: "ASOS drop down"
             }
           ],
@@ -96,7 +103,7 @@
               alt: "ASOS drop down"
             },
             {
-              src: require('../images/topshop-plp-mob.jpg'),
+              src: require('../images/topshop-plp-mob.png'),
               alt: "ASOS drop down"
             }
           ],

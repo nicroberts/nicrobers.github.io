@@ -7,9 +7,11 @@
       <img :src="$props.image" :alt="$props.alt" >
     </div>
 
-    <div class="text-container">
+    <div class="text-container" :class="{ alt: $props.alt }">
       <h2 v-if="$props.head" class="header">{{ $props.head }}</h2>
       <p v-if="$props.text" class="text">{{ $props.text }}</p>
+      <h2 v-if="$props.headTwo" class="header two">{{ $props.headTwo }}</h2>
+      <p v-if="$props.textTwo" class="text two">{{ $props.textTwo }}</p>
     </div>
 
   </div>
@@ -29,6 +31,9 @@
       alt: String,
       text: String,
       head: String,
+      textTwo: String,
+      alt: Boolean,
+      headTwo: String,
       bg: String,
       imageBg: String,
     },
@@ -84,6 +89,25 @@
     margin: 60px 0 0;
   }
 
+  .text-container.alt {
+    margin: 80px 6%;
+  }
+
+  .text-container.alt .header{
+    margin: 0 0 15px;
+  }
+
+  .text-container.alt .header.two{
+    margin: 15px 0;
+  }
+
+  .text-container.alt .text  {
+    font-family: 'Roboto-regular', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin:0;
+  }
+
   @media only screen and (min-width: 768px) {
 
     .image,
@@ -123,9 +147,23 @@
     .right .image-container {
       order: 2;
     }
+
+   .text-container.alt {
+      margin: 0 10%;
+    }
+    .text-container.alt .header{
+      margin: 0 0 15px;
+    }
+
+    .text-container.alt .text  {
+      font-family: 'Roboto-regular', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+    }
   }
 
   @media only screen and (min-width: 1024px) {
+
 
     .text {
       font-size: 35px;

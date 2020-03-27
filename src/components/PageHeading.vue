@@ -58,7 +58,7 @@
 
   h1 {
     font-family: 'Roboto-bold', sans-serif;
-    font-size: 55px;
+    font-size: 40px;
   }
 
 
@@ -101,6 +101,7 @@
 
   h1 {
     margin: 0 0 2rem;
+    font-size: 55px;
   }
 
   .sub, .list {

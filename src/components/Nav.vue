@@ -20,7 +20,6 @@
                 <li class="bun"></li>
                 <li class="bun"></li>
               </ul>
-              
             </a>
             
           </div> 
@@ -73,7 +72,7 @@
 
   .nav {
     height: 90px;
-    position: relative;
+    position: fixed;
     z-index: 12;
     background: #fff;
   }
@@ -82,9 +81,14 @@
     top: 90px;
   }
 
+  .nav-container { 
+    position: absolute;
+    top: 0;
+  }
+
   .nav-list {
     list-style: none;
-    position: absolute;
+    position: fixed;
     height: calc(100% - 90px);
     width: 100%;
     background: #fff;
@@ -185,6 +189,14 @@
   a.target-burger {
 	  margin: 1.125em;
    	width: 3.25em;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: 90px;
+    background: white;
+    position:fixed;
+    z-index: 100;
   }
 }
  

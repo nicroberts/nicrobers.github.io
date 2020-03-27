@@ -12,10 +12,13 @@
 
     <ImageCopy 
       :right="false"
+      :alt="true"
       :imageBg="'#CDC6BE'"
       :image="require('../images/topshop-image.jpg')"
       :head="'The Approach.'"
       :text="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
+      :headTwo="'The Approach.'"
+      :textTwo="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
     />
 
     <TwoCentredImages 
@@ -57,6 +60,13 @@
       :bg="'#CDB5A6'"
     />
 
+    <NextProject
+      :title="'ASOS.'"
+      :categories="'UI DESIGN | UX DESIGN | VISUAL IDENTITY'"
+      :sub="'Next project.'"
+      :bg="'#fff'"
+    />
+
   </main-layout>
 </template>
 
@@ -68,6 +78,7 @@
   import ImageCopy from '../components/ImageCopy.vue'
   import FullImage from '../components/FullImage.vue'
   import TwoCentredImages from '../components/TwoCentredImages.vue'
+  import NextProject from '../components/NextProject.vue'
 
   export default {
 
@@ -103,7 +114,7 @@
     },
 
     components: {
-      MainLayout, PageHeading, Nav, ImageCopy, FullImage, TwoCentredImages, ProjectHeading
+      MainLayout, PageHeading, Nav, ImageCopy, FullImage, TwoCentredImages, ProjectHeading, NextProject
     }
   }
 </script>

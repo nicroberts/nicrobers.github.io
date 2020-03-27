@@ -49,7 +49,7 @@
 
   h1 {
     font-family: 'Roboto-bold', sans-serif;
-    font-size: 55px;
+    font-size: 40px;
     margin: 0 0 45px 0;
   }
 
@@ -80,6 +80,7 @@
 
   h1 {
     margin: 0 0 2rem;
+    font-size: 55px;
   }
 
   .categories {

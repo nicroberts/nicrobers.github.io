@@ -50,6 +50,7 @@
   .flex {
     display: flex;
     align-items: center;
+    overflow: hidden;
   }
 
   ul {
@@ -92,5 +93,12 @@
     }
 
   }
+
+    @media only screen and (min-width: 1024px) {
+      img {
+        max-height: 90vh;
+      }
+
+    }
 
 </style>

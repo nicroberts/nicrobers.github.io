@@ -90,6 +90,8 @@
 
     ul.four {
       grid-template-columns: repeat(4, calc(25% - 20px));
+      width: 66.66666%;
+      margin: 0 auto;
     }
 
   }

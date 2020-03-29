@@ -1,7 +1,7 @@
 <template>
-  <div class="nav-container" v-bind:class="{open: isNavOpen}">
+  <div class="nav-container" v-bind:class="{open: isNavOpen, home: $props.isHomepage}">
 
-    <div class="container nav">
+    <div class="container nav" :class="{home: $props.isHomepage}">
       <div class="row">
         <div class="col-12">
           <div>
@@ -50,7 +50,7 @@
       }
     },
     props: {
-      
+      isHomepage: Boolean
     },
     components: {
       VLink
@@ -184,6 +184,10 @@
 	 transform: translateY(3.75px) translateZ(0);
 }
 
+  .nav.home {
+    background: #f2f2f2;
+  }
+
 @media only screen and (min-width: 1024px) {
 
   a.target-burger {
@@ -198,6 +202,12 @@
     position:fixed;
     z-index: 100;
   }
+
+  .nav-container.home,
+  .nav.home  {
+    background: transparent;
+  }
+
 }
  
 

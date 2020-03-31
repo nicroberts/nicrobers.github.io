@@ -25,8 +25,8 @@
 
     <TwoCentredImages 
       :images="PLPImageArray"
-      :bg="'#EEEDE5'"
-      :bottomLeft="true"
+      :bg="'#3F3F3F'"
+      :bottomLeft="false"
       :bottomRight="false"
      />
 

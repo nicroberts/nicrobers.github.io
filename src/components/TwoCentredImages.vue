@@ -2,11 +2,11 @@
   <div class="two-centered-images" >
     
     <div class="image-container" v-bind:style="{ backgroundColor:  $props.bg }" :class="{ bottom:  $props.bottomLeft }">
-      <img :src="$props.images[0].src" :alt="$props.images[0].alt" >
+      <img :src="$props.images[0].src" :alt="$props.images[0].alt" data-aos="fade-up">
     </div>
 
     <div class="image-container" v-bind:style="{ backgroundColor:  $props.bg }" :class="{ bottom:  $props.bottomRight }">
-      <img :src="$props.images[1].src" :alt="$props.images[1].alt" >
+      <img :src="$props.images[1].src" :alt="$props.images[1].alt" data-aos="fade-up">
     </div>
   </div>
 </template>

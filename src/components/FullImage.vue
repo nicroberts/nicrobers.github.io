@@ -5,9 +5,9 @@
         <div class="col-1 hidden-sm"></div>
         <div class="col-10">
 
-          <ul v-if="$props.images.length > 0" :class="{one: $props.images.length === 1, four: $props.images.length === 4}">
+          <ul v-if="$props.images.length > 0" :class="{one: $props.images.length === 1, four: $props.images.length === 4}" >
             <li v-for="image in $props.images">
-                <img v-bind:src="image.src" :alt="image.alt">
+                <img v-bind:src="image.src" :alt="image.alt" data-aos="fade-up">
             </li>
           </ul>
           

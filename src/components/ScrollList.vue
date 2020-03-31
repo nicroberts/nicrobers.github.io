@@ -4,7 +4,7 @@
       <div class="row">
           <div class="col-1 hidden-sm"></div>
           <div class="col-4">
-            <h1>{{ $props.title }}</h1>
+            <h1 data-aos="fade" data-aos-duration="1000">{{ $props.title }}</h1>
           </div>
       </div>
     </div>

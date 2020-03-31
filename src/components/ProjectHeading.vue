@@ -3,14 +3,14 @@
     <div class="container" >
       <div class="row">
           <div class="col-1 hidden-sm"></div>
-          <div class="col-4">
-            <h1>{{ $props.title }}</h1>
+          <div class="col-4" >
+            <h1 data-aos="fade" data-aos-duration="1000">{{ $props.title }}</h1>
           </div>
           <div class="col-2 hidden-sm"></div>
           <div class="col-4" >
-            <p v-if="$props.categories" class="categories">{{ $props.categories }}</p>
-            <p v-if="$props.sub" class="sub">{{ $props.sub }}</p>
-            <p v-if="$props.para" class="para">{{ $props.para }}</p>
+            <p data-aos="fade" data-aos-duration="1000" v-if="$props.categories" class="categories">{{ $props.categories }}</p>
+            <p data-aos="fade" data-aos-duration="1000" v-if="$props.sub" class="sub">{{ $props.sub }}</p>
+            <p data-aos="fade" data-aos-duration="1000" v-if="$props.para" class="para">{{ $props.para }}</p>
           </div>
         </div>
     </div>

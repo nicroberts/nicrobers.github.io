@@ -70,11 +70,16 @@
 
 <style scoped>
 
+
   .nav {
     height: 90px;
     position: fixed;
     z-index: 12;
     background: #fff;
+  }
+
+  .nav.container {
+    max-width: 100%;
   }
 
   .open .nav-list {

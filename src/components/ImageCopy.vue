@@ -4,10 +4,10 @@
     <div v-if="!$props.imageBg" class="image" v-bind:style="{ backgroundImage: 'url(' + $props.image + ')' }"></div>
     
     <div v-if="$props.imageBg" class="image-container" v-bind:style="{ backgroundColor:  $props.imageBg }">
-      <img :src="$props.image" :alt="$props.alt" >
+      <img :src="$props.image" :alt="$props.alt" data-aos="fade-up">
     </div>
 
-    <div class="text-container" :class="{ alt: $props.alt }">
+    <div class="text-container" :class="{ alt: $props.alt }" data-aos="fade-up">
       <h2 v-if="$props.head" class="header">{{ $props.head }}</h2>
       <p v-if="$props.text" class="text">{{ $props.text }}</p>
       <h2 v-if="$props.headTwo" class="header two">{{ $props.headTwo }}</h2>
@@ -120,6 +120,8 @@
       height: 100vh;
       min-height: 500px;
       max-height: 800px;
+      display: flex;
+      align-items: center;
     }
 
     .text-container {
@@ -128,7 +130,6 @@
       display: flex; 
      flex-direction: column; 
      justify-content: center;
-      height: 100%;
     }
 
     .header {

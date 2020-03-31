@@ -10,16 +10,16 @@
           <div class="row flex">
             <div class="col-1 hidden-sm"></div>
             <div class="col-2">
-              <h1>
+              <h1 data-aos="fade-right" data-aos-duration="1000">
                 Hey I’m Nic. <br />
                 A London based senior <br />
                 designer for lifestyle <br />
                 and luxury brands.
               </h1>
-              <img class="hp-image-mob" src="../images/hp-image-mob.jpg" alt="topshop homepage mobile" >
+              <img data-aos="fade-left" class="hp-image-mob" src="../images/hp-image-mob.jpg" alt="topshop homepage mobile" >
             </div>
             <div class="col-6 hidden">
-              <img class="hp-image-1" src="../images/hp-image-1.jpg" alt="topshop homepage" >
+              <img data-aos="fade-left" data-aos-duration="1600" class="hp-image-1" src="../images/hp-image-1.jpg" alt="topshop homepage" >
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@
         <div class="container">
           <div class="row flex">
             <div class="col-1 hidden-sm"></div>
-            <div class="col-8">
+            <div class="col-8" :data-aos="isMobile" data-aos-duration="1000">
               <h2>I am a </h2><span class="ui-design" @mouseover="uiHover = true" @mouseleave="uiHover = false">UI design</span><h2> specialist with over eight years experience creating beautiful and compelling design solutions based on strong UX practices and principles.</h2>
               <br />
               <br />
@@ -445,7 +445,8 @@
         iconHover: false,
         printHover: false,
         publicationHover: false,
-        typeHover: false
+        typeHover: false,
+        isMobile: window.innerWidth <= 768 ? 'fade-right' : ''
       }
     },
     components: {
@@ -457,6 +458,9 @@
           behavior: 'smooth' 
         });
        }
+     },
+     mounted: function() {
+      
      }
   }
 </script>

@@ -54,14 +54,14 @@
   }
 
   .categories {
-    font-size: 15px;
+    font-size: 14px;
     text-transform: uppercase;
     margin: 0 0 55px 0;
   }
 
   .sub {
     font-family: 'Roboto-bold', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 0 15px 0;
   }
 

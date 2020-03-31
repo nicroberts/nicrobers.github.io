@@ -10,27 +10,22 @@
       :bg="'#fff'"
     />
 
-    <TwoCentredImages 
-      :images="PLPImageArray"
-      :bg="'#3F3F3F'"
-      :bottomLeft="true"
-      :bottomRight="false"
-     />
+    <FullImage 
+      :images="imageArray"
+      :bg="'#EEEDE5'"
+    />
 
     <ImageCopy 
       :right="false"
-      :alt="true"
       :imageBg="'#CDC6BE'"
       :image="require('../images/topshop-image.jpg')"
       :head="'The Approach.'"
       :text="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
-      :headTwo="'The Approach.'"
-      :textTwo="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
     />
 
     <TwoCentredImages 
       :images="PLPImageArray"
-      :bg="'#3F3F3F'"
+      :bg="'#EEEDE5'"
       :bottomLeft="true"
       :bottomRight="false"
      />
@@ -41,14 +36,14 @@
       :bg="'#fff'"
     />
 
-      <TwoCentredImages 
+    <TwoCentredImages 
       :images="PDPImageArray"
       :bg="'#CDC6BE'"
       :bottomLeft="false"
       :bottomRight="false"
      />
 
-    <PageHeading 
+   <PageHeading 
       :sub="'Dynamic image focused product listing pages.'"
       :para="'Image is key for topshop.com, so working with the Art Director we established a fresher feeling page by introducing more types of shots to the product photography.  Creating different experiences across devices allows a truly tailored experience for the customer.'"
       :bg="'#fff'"
@@ -56,14 +51,29 @@
 
     <ImageCopy 
       :right="true"
-      :imageBg="'#CDC6BE'"
-      :image="require('../images/topshop-image.jpg')"
-      :head="'The Approach.'"
-      :text="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
+      :alt="true"
+      :imageBg="'#EEEDE5'"
+      :image="require('../images/topshop-menu-mob.png')"
+      :head="'Improved site navigation and filtering.'"
+      :text="'Cleaning up the navigation and filtering elements made a significant difference to the page.  Allowing users to hide and show menus across PLPs so filtering doesn’t interfere with their shopping experience.'"
     />
 
-    <FullImage 
-      :images="imageArray"
+   <FullImage 
+      :images="MenuImageArray"
+      :bg="'#CDC6BE'"
+    />
+
+    <ImageCopy 
+      :right="false"
+      :alt="true"
+      :imageBg="'#EEEDE5'"
+      :image="require('../images/topshop-editorial.png')"
+      :head="'Shoppable content and editorial.'"
+      :text="'Finding an integrated and intuitive way to make editorial content stoppable was a key objective of the redesign.  Overlaying functionality to beautifully shot editorial gave a rich and truly integrated experience.'"
+    />
+
+   <FullImage 
+      :images="EditorialImageArray"
       :bg="'#CDC6BE'"
     />
 
@@ -92,11 +102,23 @@
     data: function () {
       return {
           imageArray: [
-            {
-              src: require('../images/topshop-plp-nav.png'),
-              alt: "ASOS drop down"
-            }
-          ],
+          {
+            src: require('../images/topshop-hero1.jpg'),
+            alt: "Topshop Homepage"
+          },
+          {
+            src: require('../images/topshop-hero2.jpg'),
+            alt: "Topshop Editorial"
+          },
+          {
+            src: require('../images/topshop-hero3.jpg'),
+            alt: "Topshop PLP"
+          },
+          {
+            src: require('../images/topshop-hero4.jpg'),
+            alt: "Topshop PDP"
+          },
+        ],  
           PLPImageArray: [
             {
               src: require('../images/topshop-plp-desktop.jpg'),
@@ -109,12 +131,24 @@
           ],
           PDPImageArray: [
             {
-              src: require('../images/topshop-pdp-dekstop.jpg'),
-              alt: "ASOS drop down"
+              src: require('../images/topshop-pdp-mob2.png'),
+              alt: "Topshop PDP Mobile"
             },
             {
-              src: require('../images/topshop-pdp-mob.jpg'),
-              alt: "ASOS drop down"
+              src: require('../images/topshop-pdp-dekstop.jpg'),
+              alt: "Topshop PDP Desktop"
+            }
+          ],
+            MenuImageArray: [
+            {
+              src: require('../images/topshop-menu.png'),
+              alt: "Topshop Filter"
+            }
+          ],
+          EditorialImageArray: [
+            {
+              src: require('../images/topshop-editorial-desktop.jpg'),
+              alt: "Topshop Filter"
             }
           ]
       }

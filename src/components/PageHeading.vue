@@ -72,7 +72,7 @@
 
   .para {
     font-size: 12px;
-    float:right;
+    float: right;
     width: 100%;
     margin: 15px 0 0 ;
   }

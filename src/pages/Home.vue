@@ -460,7 +460,14 @@
        }
      },
      mounted: function() {
-      
+       setTimeout(function(){ 
+         
+        document.querySelector('.hp-image-1').classList.add('aos-animate');
+        document.querySelector('h1').classList.add('aos-animate');
+         
+         }, 200);
+       
+
      }
   }
 </script>
@@ -573,7 +580,7 @@
       bottom: 20px;
       height: 20px;
       width: 20px;
-      cursor: pointer;
+      cursor: url(../images/hover.png), pointer;
       opacity:1!important;
     }
 

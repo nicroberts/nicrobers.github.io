@@ -17,6 +17,10 @@
 
 <style scss>
 
+  html, body {
+    cursor: url(../images/mouse.png), default;
+  }
+
   .main {
     padding: 90px 0 0 0;
   }

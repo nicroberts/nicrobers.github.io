@@ -113,7 +113,7 @@
   }
 
   .home-icon-container {
-    width: 70%;
+    width: 150px;
     float:left;
   }
 
@@ -147,7 +147,7 @@
    right: 0;
 }
  a.target-burger:hover {
-	 cursor: pointer;
+	 cursor: url(../images/hover.png), pointer;
 }
  a.target-burger.toggled ul.buns li.bun {
 	 -webkit-transform: rotate(45deg) translateZ(0);

@@ -52,6 +52,7 @@
     font-size: 35px;
     padding: 20px;
     font-family: 'Roboto-medium', sans-serif;
+    cursor: url(../images/hover.png), pointer;
   }
 
   .home-icon {

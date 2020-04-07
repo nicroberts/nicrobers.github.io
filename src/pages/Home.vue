@@ -50,7 +50,7 @@
               <br />
               <br />
               <h2>My background of experience is diverse with projects also in art direction, </h2><span @mouseover="printHover = true" @mouseleave="printHover = false" class="print">print</span><h2> and </h2><span @mouseover="publicationHover = true" @mouseleave="publicationHover = false" class="publication">publication design</span><h2>.</h2>                
-              <p>See a full breakdown of my experience <span class="p-span">here</span></p>
+              <p>See a full breakdown of my experience <a class="p-span" href="../../CV-Nicola-Roberts.pdf" target="_blank">here</a></p>
               <img class="ui-image hidden" src="../images/hp-image-1.jpg" alt="examples of UI work" >
               <img class="print-image hidden" src="../images/print.jpg" alt="examples of print work" >
               <img class="publication-image hidden" src="../images/publication.jpg" alt="examples of publication work" >

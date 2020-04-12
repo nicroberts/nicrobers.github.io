@@ -19,6 +19,8 @@
 
   html, body {
     cursor: url(../images/mouse.png), default;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   .main {

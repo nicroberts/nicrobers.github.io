@@ -75,7 +75,7 @@
     height: 90px;
     position: fixed;
     z-index: 12;
-    background: #fff;
+    background: transparent;
   }
 
   .nav.container {
@@ -83,7 +83,7 @@
   }
 
   .open .nav-list {
-    top: 90px;
+    top: 0;
   }
 
   .nav-container { 
@@ -94,7 +94,7 @@
   .nav-list {
     list-style: none;
     position: fixed;
-    height: calc(100% - 90px);
+    height: 100%;
     width: 100%;
     background: #fff;
     z-index: 10;
@@ -203,7 +203,7 @@
   .nav-container {
     width: 100%;
     height: 90px;
-    background: white;
+    background: transparent;
     position:fixed;
     z-index: 100;
   }

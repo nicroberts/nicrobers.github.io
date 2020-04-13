@@ -3,30 +3,24 @@
     <Nav 
       :isHomepage="true"
     />
-    <div class="home" :class="{ui: uiHover, icons: iconHover, prints: printHover, publications: publicationHover, type: typeHover}">  
-      <VueScrollSnap :fullscreen="true">
+    <div class="home" :class="{ui: uiHover, icons: iconHover, prints: printHover, publications: publicationHover, vi: viHover, ad: adHover, motion: motionHover}">  
       <div class="first">
         <div class="container">
           <div class="row flex">
             <div class="col-1 hidden-sm"></div>
-            <div class="col-2">
-              <h1 data-aos="fade-right" data-aos-duration="1000">
-                Hey I’m Nic. <br />
-                A London based senior <br />
-                designer for lifestyle <br />
-                and luxury brands.
-              </h1>
-              <img data-aos="fade-left" class="hp-image-mob" src="../images/hp-image-mob.jpg" alt="topshop homepage mobile" >
-            </div>
-            <div class="col-6 hidden">
-              <img data-aos="fade-left" data-aos-duration="1600" class="hp-image-1" src="../images/hp-image-1.jpg" alt="topshop homepage" >
+            <div class="col-10">
+              <div data-aos="fade-in" data-aos-duration="1000" class="flex-container">
+                <h1>Hey <span></span> I'm Nic</h1>
+                <h2>A london based senior designer specialising in creating digital experiences for fashion, luxury and lifestyle brands.</h2>
+                <p>With over eight years experience, I create beautiful and compelling design solutions based on strong UX practices and principles. My background of experience is diverse with projects also in print and publication design, art direction and visual identity.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <svg @click="scroll()" class="arrow hidden" width="48px" height="34px" viewBox="0 0 48 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg @click="scroll()" class="arrow" width="48px" height="34px" viewBox="0 0 48 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-              <g id="Desktop_Next_Project" transform="translate(-1210.000000, -180.000000)" stroke="#2D2D2D" stroke-width="2">
+              <g id="Desktop_Next_Project" transform="translate(-1210.000000, -180.000000)" stroke="#fff" stroke-width="2">
                   <g id="Group-2" transform="translate(1234.000000, 196.500000) rotate(-135.000000) translate(-1234.000000, -196.500000) translate(1217.000000, 180.000000)">
                       <path d="M22.2469517,32.5667568 L1.24695167,32.5667568" id="Line-2"></path>
                       <path d="M1.14034996,10.7530483 L1.14034996,31.7530483" id="Line-2"></path>
@@ -37,25 +31,35 @@
         </svg>
 
       </div>
+      
+      <div class="mask ui-mask"></div>
+      <div class="mask print-mask"></div>
+      <div class="mask publication-mask"></div>
+      <div class="mask vi-mask"></div>
+      <div class="mask ad-mask"></div>
+      <div class="mask motion-mask"></div>
 
       <div class="second">
         <div class="container">
           <div class="row flex">
             <div class="col-1 hidden-sm"></div>
-            <div class="col-8" :data-aos="isMobile" data-aos-duration="1000">
-              <h2>I am a </h2><span class="ui-design" @mouseover="uiHover = true" @mouseleave="uiHover = false">UI design</span><h2> specialist with over eight years experience creating beautiful and compelling design solutions based on strong UX practices and principles.</h2>
-              <br />
-              <br />
-              <h2>My ability to create striking <span @mouseover="typeHover = true" @mouseleave="typeHover = false" class="typography">typography</span>, layout and considered </h2><span  @mouseover="iconHover = true" @mouseleave="iconHover = false" class="icon">iconography</span><h2> gives my work a strong visual identity.</h2>
-              <br />
-              <br />
-              <h2>My background of experience is diverse with projects also in art direction, </h2><span @mouseover="printHover = true" @mouseleave="printHover = false" class="print">print</span><h2> and </h2><span @mouseover="publicationHover = true" @mouseleave="publicationHover = false" class="publication">publication design</span><h2>.</h2>                
-              <p>See a full breakdown of my experience <a class="p-span" href="../../CV-Nicola-Roberts.pdf" target="_blank">here</a></p>
-              <img class="ui-image hidden" src="../images/hp-image-1.jpg" alt="examples of UI work" >
-              <img class="print-image hidden" src="../images/print.jpg" alt="examples of print work" >
-              <img class="publication-image hidden" src="../images/publication.jpg" alt="examples of publication work" >
+            <div class="col-10 fade" data-aos="fade-in" data-aos-duration="1000">
+              <p>My experience includes:</p>
+              <ul class="experience-list">
+                <li class="ui-li" @mouseover="uiHover = true" @mouseleave="uiHover = false">UI design</li>
+                <li class="icon-li" @mouseover="iconHover = true" @mouseleave="iconHover = false">Iconography</li>
+                <li class="publication-li" @mouseover="publicationHover = true" @mouseleave="publicationHover = false">Publication design</li>
+                <li class="vi-li" @mouseover="viHover = true" @mouseleave="viHover = false">Visual identity</li>
+                <li class="print-li" @mouseover="printHover = true" @mouseleave="printHover = false">Print design</li>
+                <li class="ad-li" @mouseover="adHover = true" @mouseleave="adHover = false">Art direction</li>
+                <li class="motion-li" @mouseover="motionHover = true" @mouseleave="motionHover = false">Motion design</li>
+              </ul>
+
               
-              <svg class="one" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             
+
+            </div>
+             <svg class="one" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
                 <path class="st0" d="M22.79,4.22c0-0.29-0.13-0.56-0.32-0.75c-0.19-0.19-0.46-0.31-0.75-0.3l-0.21,0L21.35,3.3L14.2,9.16
                   c-0.18,0.05-0.35,0.13-0.47,0.26c-0.03,0.03-0.05,0.08-0.08,0.12c-0.04,0-0.08-0.02-0.12-0.02L8.56,9.56C8.27,9.57,8,9.69,7.81,9.88
@@ -422,20 +426,17 @@
                 L18.11,11.24z M8.79,6.6h2.33l1.21,4.64H6.06L8.79,6.6z M12.54,12.12l2.17,10.39l-8.5-10.39H12.54z M16.38,22.39l2.41-10.28h5.87
                 L16.38,22.39z"/>
               </svg>
-
-            </div>
           </div>
         </div>
       </div>
 
-    </VueScrollSnap>
     </div>
   </main-layout>
 </template>
 
 <script>
-  import MainLayout from '../layouts/Main.vue'
-  import Nav from '../components/Nav.vue'
+  import MainLayout from '../layouts/Main.vue';
+  import Nav from '../components/Nav.vue';
   import VueScrollSnap from "vue-scroll-snap";
 
   export default {
@@ -445,8 +446,11 @@
         iconHover: false,
         printHover: false,
         publicationHover: false,
-        typeHover: false,
-        isMobile: window.innerWidth <= 768 ? 'fade-right' : ''
+        viHover: false,
+        adHover: false,
+        motionHover: false,
+        isMobile: window.innerWidth <= 768 ? 'fade-right' : '',
+        isDesktop: true
       }
     },
     components: {
@@ -457,15 +461,77 @@
          document.querySelector('.second').scrollIntoView({ 
           behavior: 'smooth' 
         });
-       }
-     },
+       },
+       mobileScorll: function() {
+         
+          var uiY = document.querySelector('.ui-li').getBoundingClientRect().top;
+          var iconY = document.querySelector('.icon-li').getBoundingClientRect().top;
+          var publicationY = document.querySelector('.publication-li').getBoundingClientRect().top;
+          var viY = document.querySelector('.vi-li').getBoundingClientRect().top;
+          var printY = document.querySelector('.print-li').getBoundingClientRect().top;
+          var adY = document.querySelector('.ad-li').getBoundingClientRect().top;
+          var motionY = document.querySelector('.motion-li').getBoundingClientRect().top;
+
+          switch (true) {
+            case uiY <= 550 && uiY > 0:
+                this.uiHover = true;
+                this.iconHover = false;
+                this.publicationHover = false;
+              break;
+            case iconY <= 550 && iconY > 0:
+                this.uiHover = false;
+                this.iconHover = true;
+                this.publicationHover = false;
+              break;
+            case publicationY <= 550 && publicationY > 0:
+                this.uiHover = false;
+                this.iconHover = false;
+                this.publicationHover = true;
+              break;
+            case viY <= 550:
+              
+              break;
+            case printY <= 550:
+              
+              break;
+            case adY <= 550:
+              
+              break;
+            case motionY <= 550:
+
+              break;
+            default:
+                this.uiHover = false;
+                this.iconHover = false;
+                this.publicationHover = false;
+          }
+       },
+        checkDesktop: function() {
+          var that = this;
+          //check if desktop
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768 ) {
+            this.isDesktop = false;
+            document.addEventListener('scroll', function(e) {
+
+                that.mobileScorll();
+            });
+          } else {
+            this.isDesktop = true;
+          }
+        }
+      }, 
      mounted: function() {
+        var that = this;
+
+        this.checkDesktop();
+        window.addEventListener('resize', function(e) {
+          that.checkDesktop();
+        });
+
        setTimeout(function(){ 
-         
-        document.querySelector('.hp-image-1').classList.add('aos-animate');
-        document.querySelector('h1').classList.add('aos-animate');
-         
-         }, 200);
+         document.querySelector('.flex-container').classList.add('aos-animate');
+         document.querySelector('.fade').classList.add('aos-animate');
+       }, 200);
        
 
      }
@@ -474,26 +540,58 @@
 
 <style scoped>
 
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  .first h1{
+    color: white;
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 30px;
+    margin: 0 0 30px;
+    text-align: center;
+  }
+
+  .first h1 span {
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background: url('../images/smile.png')
+  }
+
+  .first h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+
+  .first p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+  }
+
   .main {
     padding: 0;
     overflow-x: hidden;
   }
 
-  .first, .second, .nav {
-    background-color: #f2f2f2;
+  .first {
+    background-color: #C8C1BB;
+    height: 100vh;
   }
 
   .flex {
     display: flex;
     align-items: center;
-  }
-
-  h1 {
-    margin: 110px 0 55px;
-    width: 75%;
-    font-size: 40px;
-    position: relative;
-    z-index: 2;
   }
 
   span {
@@ -526,52 +624,8 @@
     font-family: 'Roboto-regular', sans-serif;
   }
 
-  svg {
-    display: none;
-  }
+  /*redesign section*/ 
 
-  @media only screen and (min-width: 550px) {
-
-    h1 {
-      margin: 110px 0 140px;
-    }
-  }
-
-
-  @media only screen and (min-width: 768px) {
-    h1 {
-      position: absolute;
-      margin: 0;
-      font-size: 50px;
-    }
-
-    .flex {
-      height: 100vh;
-    }
-
-    .col-2 {
-      height: 152px;
-    }
-
-    p {
-      margin: 30px 0 0 0;
-    }
-
-    .hp-image-mob {
-      display: none;
-    }
-
-    .second, .nav {
-      background-color: #fff;
-    }
-
-    .second {
-      transition: background-color 1s ease;
-    }
-
-    .hidden {
-      display: block;
-    }
 
     .arrow {
       transform: rotate(90deg) translate(-50%);
@@ -580,84 +634,124 @@
       bottom: 20px;
       height: 20px;
       width: 20px;
+      fill: #fff;
+      stroke: #fff;
       cursor: url(../images/hover.png), pointer;
       opacity:1!important;
     }
 
-    span {
-      text-decoration: underline;
+  .experience-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .experience-list li {
+    font-size: 30px;
+    margin: 0 0 75vh;
+    color: black;
+    transition: all 1s ease;
+  }
+
+  .second p {
+    text-align: center;
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 14px;
+    margin: 200px 0;;
+  }
+
+  svg {
+    fill: #fff;
+  }
+
+  .second svg {
+    position: fixed;
+  }
+
+  .mask {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    opacity: 0;
+    top: 0;
+    transition: opacity 1s ease;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .col-10, ul, li, .row {
+    overflow: hidden;
+  }
+
+  .second {
+      position: relative;
+      z-index: 1;
+      background: #fff;
+      transition: background 1s ease;
     }
 
-    h2, span {
-      font-size: 35px;
-      position: relative;
-      z-index: 2;
+    .ui-mask {
+      background-image: url('../images/ui-bg.jpg');
+    }
+
+    .print-mask {
+      background-image: url('../images/print-bg.jpg');
+    }
+
+    .vi-mask {
+      background-image: url('../images/vi-bg.jpg');
+    }
+
+    .publication-mask {
+      background-image: url('../images/publication-design-bg.jpg');
     }
 
     /*  ===== hover effects ======= */
 
     /*  ===== ui effects ======= */
 
-    .ui-image,
-    .print-image,
-    .publication-image {
-      position: absolute;
-      opacity: 0;
-      transition: opacity 1s ease;
-      z-index: 1;
-    }
 
-    .ui-image {
-      top: 130px;
-      right: 5%;
-    }
-
-    .print-image {
-      top: 300px;
-      right: 15%;
-    }
-
-    .publication-image {
-      top: 20%;
-      left: 20%;
-    }
-
-    .ui .ui-image {
-      opacity: 1;
-    }
-
-    h2, p, .icon, .print, .publication, .ui-design, .typography {
+    h2, p, .icon-li, .print-li, .publication-li, .ui-li, .vi-li, .ad-li, .motion-li {
       opacity: 1;
       transition: all 1s ease;
     }
 
-    .ui h2, 
-    .ui p,
-    .ui .icon, 
-    .ui .print, 
-    .ui .typography, 
-    .ui .publication {
+    .ui .second h2, 
+    .ui .second p,
+    .ui li:not(.ui-li) {
       opacity: 0;
     }
 
-    .ui .second {
-      background-color: #CDC7C0;
+    .ui .ui-li {
+      color: white;
     }
 
+    .ui .second {
+      background: transparent;
+    }
+
+    .ui .ui-mask {
+      opacity: 1;
+    }
 
     /*  ===== icon effects ======= */
 
-    .icons h2, 
-    .icons p,
-    .icons .ui-design, 
-    .icons .print, 
-    .icons .typography,
-    .icons .publication {
+
+    .icons .second h2, 
+    .icons .second p,
+    .icons li:not(.icon-li) {
       opacity: 0;
     }
 
     .icons .second {
-      background-color: #F0E5DE;
+      background-color: #3c3c3c;
+    }
+
+    .icons .icon-li {
+      color: white;
     }
 
     svg {
@@ -795,50 +889,150 @@
       left: 66%;
     }
 
-    .prints .print-image {
-      opacity: 1;
+    /*prints*/
+
+    .prints .second h2, 
+    .prints .second p,
+    .prints li:not(.print-li) {
+      opacity: 0;
     }
 
-    .prints h2, 
-    .prints p,
-    .prints .icon, 
-    .prints .ui-design,
-    .prints .typography, 
-    .prints .publication {
-      opacity: 0;
+    .prints .print-li {
+      color: white;
     }
 
     .prints .second {
-      background-color: #B7B6BB;
+      background: transparent;
     }
 
-    .publications .publication-image {
+    .prints .print-mask {
       opacity: 1;
     }
 
-    .publications h2, 
-    .publications p,
-    .publications .icon, 
-    .publications .print, 
-    .publications .typography,
-    .publications .ui-design {
+    /*publication */
+
+    .publications .second h2, 
+    .publications .second p,
+    .publications li:not(.publication-li) {
       opacity: 0;
     }
 
+    .publications .publication-li {
+      color: white;
+    }
+
     .publications .second {
+      background: transparent;
+    }
+
+    .publications .publication-mask {
+      opacity: 1;
+    }
+
+    /*vi */
+
+    .vi .second h2, 
+    .vi .second p,
+    .vi li:not(.vi-li) {
+      opacity: 0;
+    }
+
+    .vi .vi-li {
+      color: white;
+    }
+
+    .vi .second {
+      background: transparent;
+    }
+
+    .vi .vi-mask {
+      opacity: 1;
+    }
+
+    /* motion */
+
+    .motion .second h2, 
+    .motion .second p,
+    .motion li:not(.motion-li) {
+      opacity: 0;
+    }
+
+    .motion .second {
       background-color: #CDB5A6 ;
     }
 
-    .typography {
+    /* art direction */
+
+    .ad .second h2, 
+    .ad .second p,
+    .ad li:not(.ad-li) {
+      opacity: 0;
+    }
+
+    .ad .second {
+      background-color: #CDB5A6 ;
+    }
+
+
+  @media only screen and (min-width: 768px) {
+
+
+    .flex {
+      height: 100vh;
+    }
+
+    .col-2 {
+      height: 152px;
+    }
+
+    p {
+      margin: 30px 0 0 0;
+    }
+
+    .second p {
+      margin: 0 0 40px;
+    }
+
+    .experience-list li {
+      margin: 0 0 20px;
+    }
+
+    .experience-list li:last-of-type {
+      margin: 0;
+    }
+
+    .hp-image-mob {
+      display: none;
+    }
+
+    .hidden {
+      display: block;
+    }
+
+
+    .mask {
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      top: 100vh;
+      z-index: 0;
+      opacity: 0;
       transition: opacity 1s ease;
+      background-size: cover;
+      background-position: center;
     }
 
-    .type span {
-      font-family: 'Roboto-italic', sans-serif!important;
-      font-weight: 400;
+    span {
+      text-decoration: underline;
     }
 
-    /* stick scroll */
+    h2, span {
+      font-size: 35px;
+      position: relative;
+      z-index: 2;
+    }
+
+       /* stick scroll */
 
     .home {
       scroll-snap-type: y mandatory;
@@ -847,6 +1041,10 @@
     
     .first, .second {
       scroll-snap-align: start;
+    }
+
+    .second svg {
+      position: absolute;
     }
 
   }

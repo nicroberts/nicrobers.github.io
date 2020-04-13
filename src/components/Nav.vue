@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-container" v-bind:class="{open: isNavOpen, home: $props.isHomepage}">
+  <div class="nav-container" v-bind:class="{open: isNavOpen, home: $props.isHomepage, scrolled: scrolled}">
 
     <div class="container nav" :class="{home: $props.isHomepage}">
       <div class="row">
@@ -46,7 +46,8 @@
 
     data: function () {
       return {
-          isNavOpen: false
+          isNavOpen: false,
+          scrolled: false
       }
     },
     props: {
@@ -63,6 +64,22 @@
       closeNav() {
         this.isNavOpen = false;
         document.body.classList.remove('menu-open');
+      }
+    },
+    mounted: function(){
+      var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+      if (this.isHomepage) {
+        var that = this;
+        document.addEventListener('scroll', function(e) {
+          var secondY = document.querySelector('.second').getBoundingClientRect().top;
+          if (secondY <= 90) {
+            that.scrolled = true;
+          } else {
+            that.scrolled = false;
+          }
+        });
+        
       }
     }
   }
@@ -189,9 +206,23 @@
 	 transform: translateY(3.75px) translateZ(0);
 }
 
-  .nav.home {
-    background: #f2f2f2;
-  }
+.home .home-icon {
+  color: #fff;
+  transition: color 1s ease;
+}
+
+ .home a.target-burger ul.buns li.bun {
+   background-color: #fff;
+   transition: background-color 1s ease;
+ }
+ 
+ .home.open .home-icon {
+  color: #000;
+}
+
+ .home.open a.target-burger ul.buns li.bun {
+   background-color: #000;
+ }
 
 @media only screen and (min-width: 1024px) {
 
@@ -212,6 +243,16 @@
   .nav.home  {
     background: transparent;
   }
+
+
+ .home.scrolled .home-icon {
+  color: #000;
+}
+
+ .home.scrolled a.target-burger ul.buns li.bun {
+   background-color: #000;
+ }
+
 
 }
  

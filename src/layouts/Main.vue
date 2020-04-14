@@ -1,16 +1,46 @@
 <template>
   <div class="main" >
-    <slot></slot>
+    <passwordProtect
+      :blocked="block"
+      :tried="tried"
+      @enterPassword="enterPassword"
+    />
+    <slot v-if="allowed"></slot>
   </div>
 </template>
 
 <script>
   import VLink from '../components/VLink.vue'
-  import Nav from '../components/Nav.vue'
+  import passwordProtect from '../components/PasswordProtect.vue'
 
   export default {
+    data: function () {
+      return {
+        allowed: false,
+        tried: false,
+        block: true,
+      }
+    },
     components: {
-      VLink
+      VLink, passwordProtect
+    },
+    methods: {
+      enterPassword: function(val) {
+        if (val === "NicPortfolio") {
+          this.allowed = true;
+          this.block = false; 
+          localStorage.setItem("allowed", true);
+          location.reload();
+        } else {
+          this.tried = true;
+        }
+      }
+    },
+    mounted: function() {
+      if (localStorage.getItem("allowed") === 'true') {
+        this.allowed = true;
+        this.block = false; 
+      }
     }
   }
 </script>
@@ -23,9 +53,7 @@
     width: 100%;
   }
 
-  .main {
-    padding: 90px 0 0 0;
-  }
+
 
   html, body, p, h1, h2, h3, a, div, ul, li {
     margin: 0;

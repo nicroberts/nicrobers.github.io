@@ -18,7 +18,7 @@
         <div class="col-1 hidden-sm"></div>
         <div class="col-10">
            <ul class="this" data-aos="fade" data-aos-duration="1000">
-            <li id="asos"><span>01.</span><p class="underline" @mouseover="asosHover = true" @mouseleave="asosHover = false">ASOS.</p></li>
+            <li id="asos"><span>01.</span><a href="/asos"><p class="underline" @mouseover="asosHover = true" @mouseleave="asosHover = false">ASOS.</p></a></li>
             <li id="topshop"><span>02.</span><p class="underline" @mouseover="topshopHover = true" @mouseleave="topshopHover = false">Topshop.</p></li>
             <li id="made"><span>03.</span><p class="underline" @mouseover="madeHover = true" @mouseleave="madeHover = false">Made.com.</p></li>
             <li id="warehouse"><span>04.</span><p class="underline" @mouseover="warehousepHover = true" @mouseleave="warehousepHover = false">Warehouse.</p></li>

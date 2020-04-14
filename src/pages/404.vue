@@ -13,9 +13,9 @@
       <div class="row">
           <div class="col-7 hidden-sm"></div>
           <div class="col-4" >
-            <v-link href="/">
+            <a href="/">
               <p data-aos="fade" data-aos-duration="1000" class="home">Return Home</p>
-            </v-link>
+            </a>
           </div>
         </div>
     </div>
@@ -125,6 +125,11 @@
 
 .container, .row {
   height: unset!important;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 </style>

@@ -438,6 +438,7 @@
   import MainLayout from '../layouts/Main.vue';
   import Nav from '../components/Nav.vue';
   import VueScrollSnap from "vue-scroll-snap";
+  import passwordProtect from "../components/PasswordProtect.vue"
 
   export default {
     data: function () {
@@ -454,7 +455,7 @@
       }
     },
     components: {
-      MainLayout, Nav, VueScrollSnap
+      MainLayout, Nav, VueScrollSnap, passwordProtect
     },
      methods: {
        scroll: function() {

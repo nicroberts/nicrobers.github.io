@@ -31,7 +31,7 @@
     height: 40px;
     width: 40px;
     position: absolute;
-    top: 0;
+    top: -40px;
     left: 0;
     background-image: url("../images/bad.png");
     background-size: contain;

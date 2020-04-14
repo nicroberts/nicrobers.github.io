@@ -7,12 +7,9 @@
           <div>
 
             <div class="home-icon-container">
-              <v-link href="/"
-              :icon="true"
-              @closeNav="closeNav"
-              >
+              <a href="/">
                 <p class="home-icon">Nic Roberts.</p>
-              </v-link>
+              </a>
             </div>
 
             <a class="target-burger" v-bind:class="{toggled: isNavOpen}" @click="toggleNav">
@@ -30,9 +27,9 @@
 
           <ul class="nav-list">
             <li class="menu">
-              <v-link @closeNav="closeNav" href="/work">Work</v-link>
-              <v-link @closeNav="closeNav" href="/about">About</v-link>
-              <v-link @closeNav="closeNav" href="/contact">Contact</v-link>
+              <a class="link" href="/work">Work</a>
+              <a class="link" href="/about">About</a>
+              <a class="link" href="/contact">Contact</a>
             </li>
           </ul>
  
@@ -95,6 +92,11 @@
     background: transparent;
   }
 
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
   .nav.container {
     max-width: 100%;
   }
@@ -120,6 +122,7 @@
     transition: top .5s ease;
   }
 
+
   .menu {
     width: 100%;
     height: 100%;
@@ -132,6 +135,27 @@
   .home-icon-container {
     width: 150px;
     float:left;
+  }
+
+   .link {
+    text-decoration: none;
+    color: #000;
+    font-size: 35px;
+    padding: 20px;
+    font-family: 'Roboto-medium', sans-serif;
+    cursor: url(../images/hover.png), pointer;
+  }
+
+  .home-icon {
+    font-family: 'Roboto-bold', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    text-decoration: none;
+    line-height: 90px;
+  }
+
+  .icon {
+    padding: 0;
   }
 
   .menu-button.cross:before {
@@ -213,7 +237,6 @@
 
  .home a.target-burger ul.buns li.bun {
    background-color: #fff;
-   transition: background-color 1s ease;
  }
  
  .home.open .home-icon {
@@ -223,6 +246,16 @@
  .home.open a.target-burger ul.buns li.bun {
    background-color: #000;
  }
+
+@media only screen and (min-width: 768px) {
+   .home.scrolled .home-icon {
+    color: #000;
+  }
+
+ .home.scrolled a.target-burger ul.buns li.bun {
+   background-color: #000;
+ }
+}
 
 @media only screen and (min-width: 1024px) {
 
@@ -237,21 +270,13 @@
     background: transparent;
     position:fixed;
     z-index: 100;
+    overflow: visible;
   }
 
   .nav-container.home,
   .nav.home  {
     background: transparent;
   }
-
-
- .home.scrolled .home-icon {
-  color: #000;
-}
-
- .home.scrolled a.target-burger ul.buns li.bun {
-   background-color: #000;
- }
 
 
 }

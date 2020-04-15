@@ -61,6 +61,12 @@
     font-family: 'Roboto', sans-serif;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: url(../images/hover.png), pointer;
+  }
+
   p {
     line-height: 1.2;
   }

@@ -54,12 +54,13 @@
   .page-heading {
     width: 100%;
     padding: 55px 0 100px;
+    margin: 90px 0 0 0;
   }
 
   h1 {
     font-family: 'Roboto-bold', sans-serif;
     font-size: 40px;
-    margin: 90px 0 2rem;
+    margin: 0 0 2rem;
   }
 
 
@@ -101,7 +102,7 @@
   }
 
   h1 {
-    margin: 90px 0 2rem;
+    margin: 0 0 2rem;
     font-size: 55px;
   }
 

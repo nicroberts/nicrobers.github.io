@@ -1,8 +1,10 @@
 <template>
   <main-layout>
+    <div class="loader" :class="{finished: finished}" v-if="!seen"></div>
     <Nav 
       :isHomepage="true"
     />
+
     <div class="home" :class="{ui: uiHover, icons: iconHover, prints: printHover, publications: publicationHover, vi: viHover, ad: adHover, motion: motionHover}">  
       <div class="first">
         <div class="container">
@@ -40,18 +42,59 @@
       <div class="mask motion-mask"></div>
 
       <div class="second">
+     
         <div class="container">
           <div class="row flex">
             <div class="col-1 hidden-sm"></div>
             <div class="col-10 fade" data-aos="fade-in" data-aos-duration="1000">
               <p>My experience includes:</p>
               <ul class="experience-list">
+                   <div class="slider">
+          <ul class="slide-track">
+            <li class="coming slide">
+              coming soon
+            </li>
+            <li class="slide">
+              Art direction
+            </li>
+            <li class="coming slide">
+              coming soon
+            </li>
+            <li class="slide">
+              Art direction
+            </li>
+            <li class="coming slide">
+              coming soon
+            </li>
+            <li class="slide">
+              Art direction
+            </li>
+            <li class="coming slide">
+              coming soon
+            </li>
+            <li class="slide">
+              Art direction
+            </li>
+            <li class="coming slide">
+              coming soon
+            </li>
+            <li class="slide">
+              Art direction
+            </li>
+            <li class="coming slide">
+              coming soon
+            </li>
+            <li class="slide">
+              Art direction
+            </li>
+          </ul>
+        </div>
                 <li class="ui-li" @mouseover="uiHover = true" @mouseleave="uiHover = false">UI design</li>
                 <li class="icon-li" @mouseover="iconHover = true" @mouseleave="iconHover = false">Iconography</li>
                 <li class="publication-li" @mouseover="publicationHover = true" @mouseleave="publicationHover = false">Publication design</li>
                 <li class="vi-li" @mouseover="viHover = true" @mouseleave="viHover = false">Visual identity</li>
                 <li class="print-li" @mouseover="printHover = true" @mouseleave="printHover = false">Print design</li>
-                <li class="ad-li" @mouseover="adHover = true" @mouseleave="adHover = false">Art direction</li>
+                <li class="ad-li" @mouseover="adHover = true" @mouseleave="adHover = false">Art direction </li>
                 <li class="motion-li" @mouseover="motionHover = true" @mouseleave="motionHover = false">Motion design</li>
               </ul>
 
@@ -451,7 +494,9 @@
         adHover: false,
         motionHover: false,
         isMobile: window.innerWidth <= 768 ? 'fade-right' : '',
-        isDesktop: true
+        isDesktop: true,
+        finished: false,
+        seen: false,
       }
     },
     components: {
@@ -478,46 +523,92 @@
                 this.uiHover = true;
                 this.iconHover = false;
                 this.publicationHover = false;
+                this.viHover = false;
+                this.printHover = false;
+                this.adHover = false;
+                this.motionHover = false;
               break;
             case iconY <= 550 && iconY > 0:
                 this.uiHover = false;
                 this.iconHover = true;
                 this.publicationHover = false;
+                this.viHover = false;
+                this.printHover = false;
+                this.adHover = false;
+                this.motionHover = false;
               break;
             case publicationY <= 550 && publicationY > 0:
                 this.uiHover = false;
                 this.iconHover = false;
                 this.publicationHover = true;
+                this.viHover = false;
+                this.printHover = false;
+                this.adHover = false;
+                this.motionHover = false;
               break;
-            case viY <= 550:
-              
+            case viY <= 550 && viY > 0:
+                this.uiHover = false;
+                this.iconHover = false;
+                this.publicationHover = false;
+                this.viHover = true;
+                this.printHover = false;
+                this.adHover = false;
+                this.motionHover = false;
               break;
-            case printY <= 550:
-              
+            case printY <= 550 && printY > 0:
+                this.uiHover = false;
+                this.iconHover = false;
+                this.publicationHover = false;
+                this.viHover = false;
+                this.printHover = true;
+                this.adHover = false;
+                this.motionHover = false;
               break;
-            case adY <= 550:
-              
+            case adY <= 550 && adY > 0:
+                this.uiHover = false;
+                this.iconHover = false;
+                this.publicationHover = false;
+                this.viHover = false;
+                this.printHover = false;
+                this.adHover = true;
+                this.motionHover = false;
               break;
-            case motionY <= 550:
-
+            case motionY <= 550 && motionY > 0:
+                this.uiHover = false;
+                this.iconHover = false;
+                this.publicationHover = false;
+                this.viHover = false;
+                this.printHover = false;
+                this.adHover = false;
+                this.motionHover = true;
               break;
             default:
                 this.uiHover = false;
                 this.iconHover = false;
                 this.publicationHover = false;
+                this.viHover = false;
+                this.printHover = false;
+                this.adHover = false;
+                this.motionHover = false;
           }
        },
         checkDesktop: function() {
           var that = this;
           //check if desktop
-          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768 ) {
+          if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768 ) {
             this.isDesktop = false;
             document.addEventListener('scroll', function(e) {
-
                 that.mobileScorll();
             });
           } else {
             this.isDesktop = true;
+            this.uiHover = false;
+            this.iconHover = false;
+            this.publicationHover = false;
+            this.viHover = false;
+            this.printHover = false;
+            this.adHover = false;
+            this.motionHover = false;
           }
         }
       }, 
@@ -525,6 +616,7 @@
         var that = this;
 
         this.checkDesktop();
+
         window.addEventListener('resize', function(e) {
           that.checkDesktop();
         });
@@ -533,7 +625,23 @@
          document.querySelector('.flex-container').classList.add('aos-animate');
          document.querySelector('.fade').classList.add('aos-animate');
        }, 200);
-       
+
+       // intro aniamtion for local storage
+       if (localStorage.getItem("allowed") === null) {
+         console.log('in1')
+         //do nothing
+
+       } else if (localStorage.getItem("seen") === 'true') {
+         console.log('in2')
+         that.seen = true;
+       } else {
+        localStorage.setItem('seen', 'true');
+        setTimeout(function(){ 
+          that.finished = true;
+        },1500);
+       }
+
+
 
      }
   }
@@ -637,8 +745,8 @@
       width: 20px;
       fill: #fff;
       stroke: #fff;
-      cursor: url(../images/hover.png), pointer;
-      opacity:1!important;
+      cursor: url('../images/hover.png'), pointer;
+      opacity: 1;
     }
 
   .experience-list {
@@ -654,6 +762,8 @@
     margin: 0 0 75vh;
     color: black;
     transition: all 1s ease;
+    position: relative;
+    z-index: 1;
   }
 
   .second p {
@@ -683,7 +793,7 @@
     background-position: center;
   }
 
-  .col-10, ul, li, .row {
+  .second ul {
     overflow: hidden;
   }
 
@@ -704,10 +814,28 @@
 
     .vi-mask {
       background-image: url('../images/vi-bg.jpg');
+      background-position: right;
     }
 
     .publication-mask {
       background-image: url('../images/publication-design-bg.jpg');
+    }
+
+    .loader {
+      height: 100vh;
+      width: 100vw;
+      background-image: url('../images/test.gif');
+      background-position: center;
+      background-size: cover;
+      opacity: 1;
+      position: fixed;
+      z-index: 99;
+      transition: opacity 1s ease;
+    }
+
+    .loader.finished {
+      opacity: 0;
+      z-index: 1;
     }
 
     /*  ===== hover effects ======= */
@@ -722,6 +850,7 @@
 
     .ui .second h2, 
     .ui .second p,
+    .ui .arrow,
     .ui li:not(.ui-li) {
       opacity: 0;
     }
@@ -966,14 +1095,49 @@
 
     .ad .second h2, 
     .ad .second p,
-    .ad li:not(.ad-li) {
+    .ad li:not(.slide) {
       opacity: 0;
     }
 
+
     .ad .second {
-      background-color: #CDB5A6 ;
+      background-color: #3C3C3C;
     }
 
+    .slider {
+      height: 50px;
+      margin: auto;
+      position: absolute;
+      width: 100%;
+      bottom: 130vh;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .ad .slider {
+      opacity: 1;
+    }
+      
+    .slide-track {
+      animation: scroll 10s linear infinite;
+      display: flex;
+      width: calc(210px * 12);
+      list-style: none;
+      height: 50px;
+      overflow: visible;
+    }
+      
+    .slide-track .slide {
+      height: 40px;
+      width: 210px;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+    }
+
+    .slide-track .slide.coming {
+      color: rgba(366, 366, 366, 0.4);
+    }
 
   @media only screen and (min-width: 768px) {
 
@@ -1048,6 +1212,15 @@
       position: absolute;
     }
 
+    .slider {
+      bottom: 40px;
+    }
+
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-210px * 6))}
   }
 
 </style>

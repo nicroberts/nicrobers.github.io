@@ -10,7 +10,7 @@
 
     <ImageCopy 
       :right="false"
-      :image="'https://i.ytimg.com/vi/z1rtviBRNTw/maxresdefault.jpg'"
+      :image="image"
       :head="'My Experience.'"
       :text="'I have a diverse range of experience in a number of different disciplinaries including UI and UX design, print and publication design and art direction.'"
     />
@@ -38,7 +38,14 @@
   import ImageCopy from '../components/ImageCopy.vue'
   import ScrollList from '../components/ScrollList.vue'
 
+  import aboutImage from '../images/me.jpg'
+
   export default {
+    data: function () {
+      return {
+        image: aboutImage
+      }
+    },
     components: {
       MainLayout, PageHeading, Nav, ImageCopy, ScrollList
     }

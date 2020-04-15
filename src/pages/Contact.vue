@@ -83,9 +83,8 @@
   h1 {
     font-family: 'Roboto-bold', sans-serif;
     font-size: 55px;
-    margin: 60px 0;
+    margin: 150px 0 90px;
   }
-
 
   .text {
     font-family: 'Roboto-bold', sans-serif;

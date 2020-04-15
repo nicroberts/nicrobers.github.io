@@ -628,11 +628,9 @@
 
        // intro aniamtion for local storage
        if (localStorage.getItem("allowed") === null) {
-         console.log('in1')
          //do nothing
 
        } else if (localStorage.getItem("seen") === 'true') {
-         console.log('in2')
          that.seen = true;
        } else {
         localStorage.setItem('seen', 'true');

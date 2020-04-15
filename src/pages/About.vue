@@ -28,6 +28,8 @@
       :brandList="['Rollacoaster', 'Harrods', 'Warehouse', 'Made.com', 'Netflix', 'POP Magazine', 'ASOS', 'Selfridges', 'Topshop', 'Topman', 'Velour Magazine', 'Ivy Park', '1883 Magazine', 'Rollacoaster', 'Harrods', 'Warehouse', 'Made.com', 'Netflix', 'POP Magazine', 'ASOS', 'Selfridges', 'Topshop', 'Topman', 'Velour Magazine', 'Ivy Park', '1883 Magazine']"
     />
 
+    <Footer />
+
   </main-layout>
 </template>
 
@@ -37,17 +39,18 @@
   import PageHeading from '../components/PageHeading.vue'
   import ImageCopy from '../components/ImageCopy.vue'
   import ScrollList from '../components/ScrollList.vue'
+  import Footer from '../components/Footer.vue'
 
   import aboutImage from '../images/me.jpg'
 
   export default {
     data: function () {
       return {
-        image: aboutImage
+        image: aboutImage, Footer
       }
     },
     components: {
-      MainLayout, PageHeading, Nav, ImageCopy, ScrollList
+      MainLayout, PageHeading, Nav, ImageCopy, ScrollList, Footer
     }
   }
 </script>

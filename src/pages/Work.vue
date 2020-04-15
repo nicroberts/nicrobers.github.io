@@ -40,12 +40,14 @@
       </div>
     </div>
     </div>
+    <Footer />
   </main-layout>
 </template>
 
 <script>
   import MainLayout from '../layouts/Main.vue'
   import Nav from '../components/Nav.vue'
+  import Footer from '../components/Footer.vue'
 
   export default {
     data: function () {
@@ -64,7 +66,7 @@
       }
     },
     components: {
-      MainLayout, Nav
+      MainLayout, Nav, Footer
     },
     methods:{
       mobileScorll: function() {

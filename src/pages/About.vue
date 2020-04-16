@@ -10,7 +10,8 @@
 
     <ImageCopy 
       :right="false"
-      :image="image"
+      :imageBg="'#CDC6BE'"
+      :image="require('../images/me.jpg')"
       :head="'My Experience.'"
       :text="'I have a diverse range of experience in a number of different disciplinaries including UI and UX design, print and publication design and art direction.'"
     />
@@ -41,12 +42,11 @@
   import ScrollList from '../components/ScrollList.vue'
   import Footer from '../components/Footer.vue'
 
-  import aboutImage from '../images/me.jpg'
 
   export default {
     data: function () {
       return {
-        image: aboutImage, Footer
+        
       }
     },
     components: {

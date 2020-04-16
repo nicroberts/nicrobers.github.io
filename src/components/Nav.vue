@@ -231,30 +231,32 @@
 }
 
 .home .home-icon {
-  color: #fff;
+  color: #000;
   transition: color 1s ease;
 }
 
  .home a.target-burger ul.buns li.bun {
-   background-color: #fff;
- }
- 
- .home.open .home-icon {
-  color: #000;
-}
-
- .home.open a.target-burger ul.buns li.bun {
    background-color: #000;
  }
+ 
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (max-width: 768px) {
    .home.scrolled .home-icon {
-    color: #000;
+    color: #fff;
   }
 
  .home.scrolled a.target-burger ul.buns li.bun {
-   background-color: #000;
+   background-color: #fff;
  }
+
+    .home.open .home-icon {
+    color: #000;
+  }
+
+  .home.open a.target-burger ul.buns li.bun {
+    background-color: #000;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

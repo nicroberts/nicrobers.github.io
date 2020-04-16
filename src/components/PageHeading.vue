@@ -60,7 +60,7 @@
   h1 {
     font-family: 'Roboto-bold', sans-serif;
     font-size: 40px;
-    margin: 0 0 2rem;
+    margin: 0;
   }
 
 
@@ -69,14 +69,14 @@
     font-size: 20px;
     float: left;
     width: 100%;
-    margin: 65px 0 0 ;
+    margin: 45px 0 0 ;
   }
 
   .para {
     font-size: 12px;
     float: right;
     width: 100%;
-    margin: 15px 0 0 ;
+    margin: 30px 0 0 ;
   }
 
   .list, .list-two  {

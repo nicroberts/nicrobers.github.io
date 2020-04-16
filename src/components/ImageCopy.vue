@@ -140,6 +140,10 @@
       margin: 0;
     }
 
+    img {
+      max-height: 65%;
+    }
+
     .image-copy.right {
       display: flex;
     }
@@ -164,6 +168,7 @@
   }
 
   @media only screen and (min-width: 1024px) {
+    
 
 
     .text {

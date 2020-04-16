@@ -21,8 +21,8 @@
            <li id="topshop"><span>01.</span><a href="/topshop"><p class="underline" @mouseover="topshopHover = true" @mouseleave="topshopHover = false">Topshop.</p></a></li>
             <li id="asos"><span>02.</span><a href="/asos"><p class="underline" @mouseover="asosHover = true" @mouseleave="asosHover = false">ASOS.</p></a></li>
             <li id="made"><span>03.</span><a href="/made"><p class="underline" @mouseover="madeHover = true" @mouseleave="madeHover = false">Made.com.</p></a></li>
-            <li id="warehouse"><span>04.</span><a href="/wareshouse"><p class="underline" @mouseover="warehouseHover = true" @mouseleave="warehouseHover = false">Warehouse.</p></a></li>
-            <li id="rollacoaster" ><span>05.</span><a href="/rollacoster"><p class="underline" @mouseover="rollacoasterHover = true" @mouseleave="rollacoasterHover = false">Rollacoaster.</p></a></li>
+            <li id="warehouse"><span>04.</span><a href="/warehouse"><p class="underline" @mouseover="warehouseHover = true" @mouseleave="warehouseHover = false">Warehouse.</p></a></li>
+            <li id="rollacoaster" ><span>05.</span><a href="/rollacoaster"><p class="underline" @mouseover="rollacoasterHover = true" @mouseleave="rollacoasterHover = false">Rollacoaster.</p></a></li>
             <li id="netflix"><span>06.</span><a href="/netflix"><p class="underline" @mouseover="netflixHover = true" @mouseleave="netflixHover = false">Netflix.</p></a></li>
             <li id="magazine"><span>07.</span><a href="/1883"><p class="underline" @mouseover="magazineHover = true" @mouseleave="magazineHover = false">1883 Magazine.</p></a></li>
           </ul> 

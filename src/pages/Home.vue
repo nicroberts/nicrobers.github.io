@@ -6,42 +6,24 @@
     />
 
     <div class="home" :class="{ui: uiHover, icons: iconHover, prints: printHover, publications: publicationHover, vi: viHover, ad: adHover, motion: motionHover}">  
-      <div class="first">
-        <div class="container">
-          <div class="row flex">
-            <div class="col-1 hidden-sm"></div>
-            <div class="col-10">
-              <div data-aos="fade-in" data-aos-duration="1000" class="flex-container">
-                <h1>Hey <span></span> I'm Nic</h1>
-                <h2>A london based senior designer specialising in creating digital experiences for fashion, luxury and lifestyle brands.</h2>
-                <p>With over eight years experience, I create beautiful and compelling design solutions based on strong UX practices and principles. My background of experience is diverse with projects also in print and publication design, art direction and visual identity.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <svg @click="scroll()" class="arrow" width="48px" height="34px" viewBox="0 0 48 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-              <g id="Desktop_Next_Project" transform="translate(-1210.000000, -180.000000)" stroke="#fff" stroke-width="2">
-                  <g id="Group-2" transform="translate(1234.000000, 196.500000) rotate(-135.000000) translate(-1234.000000, -196.500000) translate(1217.000000, 180.000000)">
-                      <path d="M22.2469517,32.5667568 L1.24695167,32.5667568" id="Line-2"></path>
-                      <path d="M1.14034996,10.7530483 L1.14034996,31.7530483" id="Line-2"></path>
-                      <path d="M32.9946474,0.708080802 L2.25735931,31.4452928" id="Line-2"></path>
-                  </g>
-              </g>
-          </g>
-        </svg>
-
-      </div>
+        
+      <PageHeading 
+        :title="`Hey I'm Nic.`"
+        :sub="'A london based senior designer specialising in creating digital experiences for fashion, luxury and lifestyle brands.'"
+        :para="'With over eight years experience, I create beautiful and compelling design solutions based on strong UX practices and principles. My background of experience is diverse with projects also in print and publication design, art direction and visual identity.'"
+        :bg="'#fff'"
+      />
       
-      <div class="mask ui-mask"></div>
-      <div class="mask print-mask"></div>
-      <div class="mask publication-mask"></div>
-      <div class="mask vi-mask"></div>
-      <div class="mask ad-mask"></div>
-      <div class="mask motion-mask"></div>
+
 
       <div class="second">
+
+        <div class="mask ui-mask"></div>
+        <div class="mask print-mask"></div>
+        <div class="mask publication-mask"></div>
+        <div class="mask vi-mask"></div>
+        <div class="mask ad-mask"></div>
+        <div class="mask motion-mask"></div>
      
         <div class="container">
           <div class="row flex">
@@ -89,13 +71,12 @@
             </li>
           </ul>
         </div>
-                <li class="ui-li" @mouseover="uiHover = true" @mouseleave="uiHover = false">UI design</li>
-                <li class="icon-li" @mouseover="iconHover = true" @mouseleave="iconHover = false">Iconography</li>
-                <li class="publication-li" @mouseover="publicationHover = true" @mouseleave="publicationHover = false">Publication design</li>
-                <li class="vi-li" @mouseover="viHover = true" @mouseleave="viHover = false">Visual identity</li>
-                <li class="print-li" @mouseover="printHover = true" @mouseleave="printHover = false">Print design</li>
-                <li class="ad-li" @mouseover="adHover = true" @mouseleave="adHover = false">Art direction </li>
-                <li class="motion-li" @mouseover="motionHover = true" @mouseleave="motionHover = false">Motion design</li>
+                <li class="ui-li" @mouseover="uiHover = true" @mouseleave="uiHover = false">UI design.</li>
+                <li class="icon-li" @mouseover="iconHover = true" @mouseleave="iconHover = false">Iconography.</li>
+                <li class="publication-li" @mouseover="publicationHover = true" @mouseleave="publicationHover = false">Publication design.</li>
+                <li class="print-li" @mouseover="printHover = true" @mouseleave="printHover = false">Print design.</li>
+                <li class="ad-li" @mouseover="adHover = true" @mouseleave="adHover = false">Art direction.</li>
+                <li class="motion-li" @mouseover="motionHover = true" @mouseleave="motionHover = false">Motion design.</li>
               </ul>
 
               
@@ -482,6 +463,7 @@
   import Nav from '../components/Nav.vue';
   import VueScrollSnap from "vue-scroll-snap";
   import passwordProtect from "../components/PasswordProtect.vue"
+  import PageHeading from '../components/PageHeading.vue'
 
   export default {
     data: function () {
@@ -500,7 +482,7 @@
       }
     },
     components: {
-      MainLayout, Nav, VueScrollSnap, passwordProtect
+      MainLayout, Nav, VueScrollSnap, passwordProtect, PageHeading
     },
      methods: {
        scroll: function() {
@@ -513,7 +495,6 @@
           var uiY = document.querySelector('.ui-li').getBoundingClientRect().top;
           var iconY = document.querySelector('.icon-li').getBoundingClientRect().top;
           var publicationY = document.querySelector('.publication-li').getBoundingClientRect().top;
-          var viY = document.querySelector('.vi-li').getBoundingClientRect().top;
           var printY = document.querySelector('.print-li').getBoundingClientRect().top;
           var adY = document.querySelector('.ad-li').getBoundingClientRect().top;
           var motionY = document.querySelector('.motion-li').getBoundingClientRect().top;
@@ -542,15 +523,6 @@
                 this.iconHover = false;
                 this.publicationHover = true;
                 this.viHover = false;
-                this.printHover = false;
-                this.adHover = false;
-                this.motionHover = false;
-              break;
-            case viY <= 550 && viY > 0:
-                this.uiHover = false;
-                this.iconHover = false;
-                this.publicationHover = false;
-                this.viHover = true;
                 this.printHover = false;
                 this.adHover = false;
                 this.motionHover = false;
@@ -628,11 +600,9 @@
 
        // intro aniamtion for local storage
        if (localStorage.getItem("allowed") === null) {
-         console.log('in1')
          //do nothing
 
        } else if (localStorage.getItem("seen") === 'true') {
-         console.log('in2')
          that.seen = true;
        } else {
         localStorage.setItem('seen', 'true');
@@ -753,7 +723,6 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
 
@@ -764,10 +733,12 @@
     transition: all 1s ease;
     position: relative;
     z-index: 1;
+    width: fit-content;
+    font-family: 'Roboto-medium', sans-serif;
   }
 
   .second p {
-    text-align: center;
+    text-align: left;
     font-family: 'Roboto-bold', sans-serif;
     font-size: 14px;
     margin: 200px 0;;
@@ -800,7 +771,7 @@
   .second {
       position: relative;
       z-index: 1;
-      background: #fff;
+      background: #C8C1BB;
       transition: background 1s ease;
     }
 
@@ -1179,7 +1150,7 @@
       position: absolute;
       height: 100vh;
       width: 100vw;
-      top: 100vh;
+      top: 0;
       z-index: 0;
       opacity: 0;
       transition: opacity 1s ease;
@@ -1195,17 +1166,6 @@
       font-size: 35px;
       position: relative;
       z-index: 2;
-    }
-
-       /* stick scroll */
-
-    .home {
-      scroll-snap-type: y mandatory;
-      overflow-y: scroll;
-    }
-    
-    .first, .second {
-      scroll-snap-align: start;
     }
 
     .second svg {

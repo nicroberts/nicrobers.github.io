@@ -132,4 +132,8 @@ a {
   text-decoration: none;
 }
 
+html {
+  overflow: hidden;
+}
+
 </style>

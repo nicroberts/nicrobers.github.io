@@ -10,7 +10,8 @@
 
     <ImageCopy 
       :right="false"
-      :image="image"
+      :imageBg="'#CDC6BE'"
+      :image="require('../images/me.jpg')"
       :head="'My Experience.'"
       :text="'I have a diverse range of experience in a number of different disciplinaries including UI and UX design, print and publication design and art direction.'"
     />
@@ -28,6 +29,8 @@
       :brandList="['Rollacoaster', 'Harrods', 'Warehouse', 'Made.com', 'Netflix', 'POP Magazine', 'ASOS', 'Selfridges', 'Topshop', 'Topman', 'Velour Magazine', 'Ivy Park', '1883 Magazine', 'Rollacoaster', 'Harrods', 'Warehouse', 'Made.com', 'Netflix', 'POP Magazine', 'ASOS', 'Selfridges', 'Topshop', 'Topman', 'Velour Magazine', 'Ivy Park', '1883 Magazine']"
     />
 
+    <Footer />
+
   </main-layout>
 </template>
 
@@ -37,17 +40,17 @@
   import PageHeading from '../components/PageHeading.vue'
   import ImageCopy from '../components/ImageCopy.vue'
   import ScrollList from '../components/ScrollList.vue'
+  import Footer from '../components/Footer.vue'
 
-  import aboutImage from '../images/me.jpg'
 
   export default {
     data: function () {
       return {
-        image: aboutImage
+        
       }
     },
     components: {
-      MainLayout, PageHeading, Nav, ImageCopy, ScrollList
+      MainLayout, PageHeading, Nav, ImageCopy, ScrollList, Footer
     }
   }
 </script>

@@ -59,7 +59,7 @@
 	overflow:hidden;
 	position: relative;
 	width: 100%;
-  margin: 0 0 20px;
+  margin: 0 0 100px;
 }
 	
 .slide-track {

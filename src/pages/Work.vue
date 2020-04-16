@@ -18,13 +18,13 @@
         <div class="col-1 hidden-sm"></div>
         <div class="col-10">
            <ul class="this" data-aos="fade" data-aos-duration="1000">
-           <li id="topshop"><span>01.</span><p class="underline" @mouseover="topshopHover = true" @mouseleave="topshopHover = false">Topshop.</p></li>
+           <li id="topshop"><span>01.</span><a href="/topshop"><p class="underline" @mouseover="topshopHover = true" @mouseleave="topshopHover = false">Topshop.</p></a></li>
             <li id="asos"><span>02.</span><a href="/asos"><p class="underline" @mouseover="asosHover = true" @mouseleave="asosHover = false">ASOS.</p></a></li>
-            <li id="made"><span>03.</span><p class="underline" @mouseover="madeHover = true" @mouseleave="madeHover = false">Made.com.</p></li>
-            <li id="warehouse"><span>04.</span><p class="underline" @mouseover="warehouseHover = true" @mouseleave="warehouseHover = false">Warehouse.</p></li>
-            <li id="rollacoaster" ><span>05.</span><p class="underline" @mouseover="rollacoasterHover = true" @mouseleave="rollacoasterHover = false">Rollacoaster.</p></li>
-            <li id="netflix"><span>06.</span><p class="underline" @mouseover="netflixHover = true" @mouseleave="netflixHover = false">Netflix.</p></li>
-            <li id="magazine"><span>07.</span><p class="underline" @mouseover="magazineHover = true" @mouseleave="magazineHover = false">1883 Magazine.</p></li>
+            <li id="made"><span>03.</span><a href="/made"><p class="underline" @mouseover="madeHover = true" @mouseleave="madeHover = false">Made.com.</p></a></li>
+            <li id="warehouse"><span>04.</span><a href="/wareshouse"><p class="underline" @mouseover="warehouseHover = true" @mouseleave="warehouseHover = false">Warehouse.</p></a></li>
+            <li id="rollacoaster" ><span>05.</span><a href="/rollacoster"><p class="underline" @mouseover="rollacoasterHover = true" @mouseleave="rollacoasterHover = false">Rollacoaster.</p></a></li>
+            <li id="netflix"><span>06.</span><a href="/netflix"><p class="underline" @mouseover="netflixHover = true" @mouseleave="netflixHover = false">Netflix.</p></a></li>
+            <li id="magazine"><span>07.</span><a href="/1883"><p class="underline" @mouseover="magazineHover = true" @mouseleave="magazineHover = false">1883 Magazine.</p></a></li>
           </ul> 
 
           <img class="mobile-image hidden-desk imageasos" src="../images/ASOS-hover-mb.png" alt="example of asos work">
@@ -40,12 +40,14 @@
       </div>
     </div>
     </div>
+    <Footer />
   </main-layout>
 </template>
 
 <script>
   import MainLayout from '../layouts/Main.vue'
   import Nav from '../components/Nav.vue'
+  import Footer from '../components/Footer.vue'
 
   export default {
     data: function () {
@@ -64,7 +66,7 @@
       }
     },
     components: {
-      MainLayout, Nav
+      MainLayout, Nav, Footer
     },
     methods:{
       mobileScorll: function() {

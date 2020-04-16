@@ -12,12 +12,12 @@
 
     <FullImage 
       :images="imageArray"
-      :bg="'#CDB5A6'"
+      :bg="'#C8C1BB'"
     />
 
     <ImageCopy 
       :right="false"
-      :imageBg="'#F0E5DE'"
+      :imageBg="'#E2DCD4'"
       :image="require('../images/asos-approach.jpg')"
       :head="'The Approach.'"
       :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
@@ -31,13 +31,13 @@
 
     <FullImage 
       :images="imageArrayTwo"
-      :bg="'#CDB5A6'"
+      :bg="'#C8C1BB'"
     />
 
     <ImageCopy 
       :right="true"
       :alt="true"
-      :imageBg="'#F0E5DE'"
+      :imageBg="'#E2DCD4'"
       :image="require('../images/asos-purchase.png')"
       :head="'Saved and pre-loaded looks.'"
       :text="'To enhance the shopping experience of the app, both curated content and the ability to save user generated content had to be integrated into the experience.  Pre-loaded looks and saved looks really enhance the experience to encourage users to return and always feel there is fresh content.'"

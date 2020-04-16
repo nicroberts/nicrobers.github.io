@@ -12,7 +12,7 @@
 
     <FullImage 
       :images="imageArray"
-      :bg="'#E3E4E8'"
+      :bg="'#C8C1BB'"
     />
 
     <ImageCopy 
@@ -32,7 +32,7 @@
     <ImageCopy 
       :right="true"
       :alt="true"
-      :imageBg="'#B7B6BB'"
+      :imageBg="'#C8C1BB'"
       :image="require('../images/made-wishlist6.png')"
       :head="'The Approach.'"
       :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
@@ -40,7 +40,7 @@
 
     <FullImage 
       :images="imageArrayTwo"
-      :bg="'#E3E4E8'"
+      :bg="'#B7B6BB'"
     />
 
    <NextProject

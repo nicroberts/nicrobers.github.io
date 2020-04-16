@@ -302,15 +302,15 @@
   }
 
   .asos.work {
-    background-color: #E2DCD4;
+    background-color: #C8C1BB;
   }
 
   .made.work {
-    background-color: #E2E2E0;
+    background-color: #C8C1BB;
   }
 
   .warehouse.work {
-    background-color: #C5C5C5;
+    background-color: #C8C1BB;
   }
 
   .rollacoaster.work {
@@ -326,11 +326,11 @@
   }
 
   .netflix.work {
-    background-color: #E2DCD4;
+    background-color: #C8C1BB;
   }
 
   .magazine.work {
-    background-color: #E2E2E0;
+    background-color: #C8C1BB;
   }
   
 

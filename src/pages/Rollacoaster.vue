@@ -12,14 +12,14 @@
 
     <TwoCentredImages 
       :images="ImageArray"
-      :bg="'#CDC7C0'"
+      :bg="'#E2DCD4'"
       :bottomLeft="false"
       :bottomRight="false"
      />
 
     <ImageCopy 
       :right="false"
-      :imageBg="'#EEEDE5'"
+      :imageBg="'#AB9389'"
       :image="require('../images/rollacoaster3.jpg')"
       :head="'The Approach.'"
       :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
@@ -27,7 +27,7 @@
 
    <TwoCentredImages 
       :images="ImageArrayTwo"
-      :bg="'#CDC7C0'"
+      :bg="'#E2DCD4'"
       :bottomLeft="false"
       :bottomRight="false"
      />
@@ -40,7 +40,7 @@
 
    <TwoCentredImages 
       :images="ImageArrayThree"
-      :bg="'#EEEDE5'"
+      :bg="'#AB9389'"
       :bottomLeft="false"
       :bottomRight="false"
      />
@@ -48,7 +48,7 @@
     <ImageCopy 
       :right="true"
       :alt="true"
-      :imageBg="'#CDC7C0'"
+      :imageBg="'#E2DCD4'"
       :image="require('../images/rollacoaster8.jpg')"
       :head="'The Approach.'"
       :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"

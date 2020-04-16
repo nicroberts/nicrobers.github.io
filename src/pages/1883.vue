@@ -17,7 +17,7 @@
 
     <ImageCopy 
       :right="false"
-      :imageBg="'#EEEDE5'"
+      :imageBg="'#E2DCD4'"
       :image="require('../images/18832.jpg')"
       :head="'The Approach.'"
       :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
@@ -38,7 +38,7 @@
 
     <FullImage 
       :images="ImageArrayThree"
-      :bg="'#EEEDE5'"
+      :bg="'#E2DCD4'"
     />
 
    <NextProject

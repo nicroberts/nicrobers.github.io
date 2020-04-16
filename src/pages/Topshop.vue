@@ -12,12 +12,12 @@
 
     <FullImage 
       :images="imageArray"
-      :bg="'#EEEDE5'"
+      :bg="'#B7B6BB'"
     />
 
     <ImageCopy 
       :right="false"
-      :imageBg="'#CDC6BE'"
+      :imageBg="'#C8C1BB'"
       :image="require('../images/topshop-image.jpg')"
       :head="'The Approach.'"
       :text="'Mobile first approach to all pages, simplifying and cleaning up pages.  Introducing intuitive swipes and expanding accordions, but focusing on immersive imagery and dynamic pages.'"
@@ -25,7 +25,7 @@
 
     <TwoCentredImages 
       :images="PLPImageArray"
-      :bg="'#3F3F3F'"
+      :bg="'#B7B6BB'"
       :bottomLeft="false"
       :bottomRight="false"
      />
@@ -38,7 +38,7 @@
 
     <TwoCentredImages 
       :images="PDPImageArray"
-      :bg="'#CDC6BE'"
+      :bg="'#C8C1BB'"
       :bottomLeft="false"
       :bottomRight="false"
      />
@@ -52,7 +52,7 @@
     <ImageCopy 
       :right="true"
       :alt="true"
-      :imageBg="'#EEEDE5'"
+      :imageBg="'#B7B6BB'"
       :image="require('../images/topshop-menu-mob.png')"
       :head="'Improved site navigation and filtering.'"
       :text="'Cleaning up the navigation and filtering elements made a significant difference to the page.  Allowing users to hide and show menus across PLPs so filtering doesn’t interfere with their shopping experience.'"
@@ -60,13 +60,13 @@
 
    <FullImage 
       :images="MenuImageArray"
-      :bg="'#CDC6BE'"
+      :bg="'#C8C1BB'"
     />
 
     <ImageCopy 
       :right="false"
       :alt="true"
-      :imageBg="'#EEEDE5'"
+      :imageBg="'#B7B6BB'"
       :image="require('../images/topshop-editorial.png')"
       :head="'Shoppable content and editorial.'"
       :text="'Finding an integrated and intuitive way to make editorial content stoppable was a key objective of the redesign.  Overlaying functionality to beautifully shot editorial gave a rich and truly integrated experience.'"
@@ -74,7 +74,7 @@
 
    <FullImage 
       :images="EditorialImageArray"
-      :bg="'#CDC6BE'"
+      :bg="'#C8C1BB'"
     />
 
     <NextProject

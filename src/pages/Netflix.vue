@@ -12,12 +12,12 @@
     
     <FullImage 
       :images="ImageArray"
-      :bg="'#EEEDE5'"
+      :bg="'#B7B6BB'"
     />
 
     <ImageCopy 
       :right="false"
-      :imageBg="'#CDC7C0'"
+      :imageBg="'#C8C1BB'"
       :image="require('../images/Netflix5.jpg')"
       :head="'The Approach.'"
       :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
@@ -31,7 +31,7 @@
 
    <TwoCentredImages 
       :images="ImageArrayTwo"
-      :bg="'#CDC7C0'"
+      :bg="'#B7B6BB'"
       :bottomLeft="false"
       :bottomRight="false"
      />

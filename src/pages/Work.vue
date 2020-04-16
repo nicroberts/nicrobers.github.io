@@ -170,7 +170,6 @@
         } else {
           //if desktop add follower div to follow cursor
           this.isDesktop = true;
-          console.log('in')
           document.addEventListener('mousemove', function(e) {
             document.querySelector('.follower').style.left = (e.pageX + 20) + "px";
             document.querySelector('.follower').style.top = ( e.pageY + 20) + "px";
@@ -248,6 +247,10 @@
 
   .hidden-tab {
     display: none;
+  }
+
+  .this {
+    margin: 0;
   }
 
   .mobile-image {
@@ -351,6 +354,10 @@
       h1 {
         margin: 100px 0 90px;
         font-size: 55px;
+      }
+
+      .this {
+        margin: 0 0 50px;
       }
 
       h2 {

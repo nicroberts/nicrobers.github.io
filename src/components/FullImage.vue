@@ -101,7 +101,7 @@
   }
 
     @media only screen and (min-width: 1024px) {
-      img {
+      ul.one img {
         max-height: 80vh;
         max-width: 75%;
         margin: auto;

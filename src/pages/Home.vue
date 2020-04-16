@@ -611,8 +611,6 @@
         },1500);
        }
 
-
-
      }
   }
 </script>
@@ -792,6 +790,10 @@
       background-image: url('../images/publication-design-bg.jpg');
     }
 
+    .motion-mask {
+      background-image: url('../images/motion.gif');
+    }
+
     .loader {
       height: 100vh;
       width: 100vw;
@@ -857,8 +859,8 @@
 
     svg {
       display: block;
-      height: 20px;
-      width: 20px;
+      height: 30px;
+      width: 30px;
       opacity: 0;
       position: absolute;
       z-index: 2;
@@ -1058,8 +1060,16 @@
       opacity: 0;
     }
 
+    .motion .motion-li {
+      color: white;
+    }
+
     .motion .second {
-      background-color: #CDB5A6 ;
+      background: transparent;
+    }
+
+    .motion .motion-mask {
+      opacity: 1;
     }
 
     /* art direction */

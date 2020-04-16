@@ -98,7 +98,7 @@
   }
 
   .text-container.alt .header.two{
-    margin: 15px 0;
+    margin: 40px 0 15px;
   }
 
   .text-container.alt .text  {
@@ -131,6 +131,7 @@
      flex-direction: column; 
      justify-content: center;
     }
+    
 
     .header {
       margin: 0 0 40px;

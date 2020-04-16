@@ -13,10 +13,10 @@
           </div>
           <div class="col-1 flex">
 
-            <v-link href="/asos">
+            <a :href="$props.link">
               <svg class="arrow" width="48px" height="34px" viewBox="0 0 48 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                    <g id="Desktop_Next_Project" transform="translate(-1210.000000, -180.000000)" stroke="#2D2D2D" stroke-width="2">
+                    <g id="Desktop_Next_Project" transform="translate(-1210.000000, -180.000000)" stroke="#000" stroke-width="2">
                         <g id="Group-2" transform="translate(1234.000000, 196.500000) rotate(-135.000000) translate(-1234.000000, -196.500000) translate(1217.000000, 180.000000)">
                             <path d="M22.2469517,32.5667568 L1.24695167,32.5667568" id="Line-2"></path>
                             <path d="M1.14034996,10.7530483 L1.14034996,31.7530483" id="Line-2"></path>
@@ -25,7 +25,7 @@
                     </g>
                 </g>
               </svg>
-            </v-link>
+            </a>
 
           </div>
         </div>
@@ -34,7 +34,6 @@
 </template>
 
 <script>
-  import VLink from '../components/VLink.vue'
 
   export default {
 
@@ -46,11 +45,10 @@
       title: String,
       categories: String,
       sub: String,
+      link: String,
       bg: String,
     },
-    components: {
-      VLink
-    },
+
     methods: {
 
     }
@@ -95,15 +93,11 @@
 @media only screen and (min-width: 768px) {
 
   .next-project {
-    padding: 80px 0 100px;
+    padding: 150px 0;
   }
 
   .sub {
     margin: 0 0 60px;
-  }
-
-  h1 {
-    font-size: 55px;
   }
 
 

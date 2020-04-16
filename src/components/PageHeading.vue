@@ -53,7 +53,7 @@
 
   .page-heading {
     width: 100%;
-    padding: 55px 0 100px;
+    padding: 80px 0 100px;
     margin: 90px 0 0 0;
   }
 
@@ -98,7 +98,7 @@
 @media only screen and (min-width: 768px) {
 
   .page-heading {
-    padding: 80px 0 100px;
+    padding: 150px 0 150px;
   }
 
   h1 {

@@ -80,7 +80,6 @@ input {
 
 input:focus {
   outline: none;
-  box-shadow: 0 0 5px 0 grey;
 }
 
 button {

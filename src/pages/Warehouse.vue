@@ -46,13 +46,14 @@
     />
 
    <NextProject
-      :title="'Topshop.'"
-      :categories="'UI DESIGN | UX DESIGN | VISUAL IDENTITY'"
+      :title="'Rollacoaster.'"
+      :categories="'PUBLICATION DESIGN | PRINT DESIGN'"
       :sub="'Next project.'"
       :bg="'#fff'"
+      :link="'/rollacoaster'"
     />
 
-    
+    <Footer />
 
   </main-layout>
 </template>
@@ -66,6 +67,7 @@
   import FullImage from '../components/FullImage.vue'
   import PageHeading from '../components/PageHeading.vue'
   import NextProject from '../components/NextProject.vue'
+  import Footer from '../components/Footer.vue'
 
   export default {
 
@@ -91,7 +93,7 @@
     },
 
     components: {
-      MainLayout, Nav, ProjectHeading, ImageCopy, FullImage, PageHeading, TwoCentredImages, NextProject
+      MainLayout, Nav, ProjectHeading, ImageCopy, FullImage, PageHeading, TwoCentredImages, NextProject, Footer
     }
   }
 </script>

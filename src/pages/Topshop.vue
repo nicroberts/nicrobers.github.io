@@ -44,8 +44,8 @@
      />
 
    <PageHeading 
-      :sub="'Dynamic image focused product listing pages.'"
-      :para="'Image is key for topshop.com, so working with the Art Director we established a fresher feeling page by introducing more types of shots to the product photography.  Creating different experiences across devices allows a truly tailored experience for the customer.'"
+      :sub="'Clean and simplified product description pages.'"
+      :para="'Working out where best to hold content across the site I was able to simplify the product listing pages, making them purely about highlighting the product in the best possible way.'"
       :bg="'#fff'"
     />
 
@@ -82,7 +82,10 @@
       :categories="'UI DESIGN | UX DESIGN | VISUAL IDENTITY'"
       :sub="'Next project.'"
       :bg="'#fff'"
+      :link="'/asos'"
     />
+
+    <Footer />
 
   </main-layout>
 </template>
@@ -96,6 +99,7 @@
   import FullImage from '../components/FullImage.vue'
   import TwoCentredImages from '../components/TwoCentredImages.vue'
   import NextProject from '../components/NextProject.vue'
+  import Footer from '../components/Footer.vue'
 
   export default {
 
@@ -155,7 +159,7 @@
     },
 
     components: {
-      MainLayout, PageHeading, Nav, ImageCopy, FullImage, TwoCentredImages, ProjectHeading, NextProject
+      MainLayout, PageHeading, Nav, ImageCopy, FullImage, TwoCentredImages, ProjectHeading, NextProject, Footer
     }
   }
 </script>

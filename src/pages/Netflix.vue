@@ -6,7 +6,7 @@
       :title="'Netflix.'"
       :categories="'UI DESIGN   |   UX DESIGN'"
       :sub="'Stranger Things x Topshop.'"
-      :para="'Online shoppable lookbook design for Warehouse AW14 Collection. The desktop design offers an easily navigated lookbook that once interacted with, splits into detailed product imagery with the ability to add products directly to bag.'"
+      :para="'Responsive online hub design for a brand partnership campaign with Topshop and Netflix for the launch of Stranger Things 2. As lead designer, I worked on initial concept through to final delivery for the online presence to accompany the in-store event experience.'"
       :bg="'#fff'"
     />
     
@@ -20,12 +20,12 @@
       :imageBg="'#C8C1BB'"
       :image="require('../images/Netflix5.jpg')"
       :head="'The Approach.'"
-      :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
+      :text="'I wanted to create a immersive digital experience, reflective of that in the show, to enhance the shopping journey for the exclusive Stranger Things collection.'"
     />
 
     <PageHeading 
-      :sub="'Simplifying the UI design, creating a well designed and easy to use interface.'"
-      :para="'Icons where very important in this project, being that there had to be around 30, each had to remain clear at small sizes and feel ASOS branded.  The focus of the UI had to be the camera element, so although important the menu needed to remain understated and easy to use.'"
+      :sub="'Recreating the Stranger Things experience in the digital space.'"
+      :para="'Users could toggle between an ‘upside down’ world where the page content and imagery would flip upside down and overaly a particle effect to mimic the atmospheric iconic scenes from the series.  Using a toggle meant that on land, it did not distrup the initial purchasing journey, but instead added a fun layer to the page should the user interact.'"
       :bg="'#fff'"
     />
 

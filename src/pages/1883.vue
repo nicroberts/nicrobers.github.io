@@ -5,8 +5,8 @@
     <ProjectHeading 
       :title="'1883 Magazine.'"
       :categories="'PUBLICATION DESIGN   |   PRINT DESIGN'"
-      :sub="'Magazine Issue ?.'"
-      :para="'Online shoppable lookbook design for Warehouse AW14 Collection. The desktop design offers an easily navigated lookbook that once interacted with, splits into detailed product imagery with the ability to add products directly to bag.'"
+      :sub="'Magazine editorial layout.'"
+      :para="'Editorial layout design for issue 9 of the magazine.  The editorial spanned 8 pages of the magazine and I was tasked with designing the layout whilst on placement at the publication.'"
       :bg="'#fff'"
     />
     
@@ -20,7 +20,7 @@
       :imageBg="'#E2DCD4'"
       :image="require('../images/18832.jpg')"
       :head="'The Approach.'"
-      :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
+      :text="`1883's design style is very experiemental, so I approached this layout with this in mind, but also to showcase the imagery as best as possible.`"
     />
 
    <TwoCentredImages 
@@ -31,8 +31,8 @@
      />
 
     <PageHeading 
-      :sub="'Simplifying the UI design, creating a well designed and easy to use interface.'"
-      :para="'Icons where very important in this project, being that there had to be around 30, each had to remain clear at small sizes and feel ASOS branded.  The focus of the UI had to be the camera element, so although important the menu needed to remain understated and easy to use.'"
+      :sub="'Playing with white space and image sizes to create a dynamic layout.'"
+      :para="'To ensure I incorporated all imagery within the editorial to the five double page spreads, including the opener and credits, I decided to use a layout with both full bleed imagery and white space.  This also allowed credits to not interact with imagery and gave the editorial a nice flow.'"
       :bg="'#fff'"
     />
 

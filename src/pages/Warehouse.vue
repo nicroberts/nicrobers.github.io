@@ -20,12 +20,12 @@
       :imageBg="'#AB9389'"
       :image="require('../images/warehouse-lookbook-mob.jpg')"
       :head="'The Approach.'"
-      :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
+      :text="'To create a easy to use, yet beautifully designed lookbook for customers to easily view and shop the latest collection from Warehouse.'"
     />
 
     <PageHeading 
-      :sub="'Simplifying the UI design, creating a well designed and easy to use interface.'"
-      :para="'Icons where very important in this project, being that there had to be around 30, each had to remain clear at small sizes and feel ASOS branded.  The focus of the UI had to be the camera element, so although important the menu needed to remain understated and easy to use.'"
+      :sub="'Introducing a new way to make imagery shoppable.'"
+      :para="'Working with limited imagery, I came up with a solution that gave a originally static lookbook a dynamic and interactive layer.  Images could be clicked into, diving the screen into crops of the products, making them easily shoppable, even when limited with product shots.'"
       :bg="'#fff'"
     />
 
@@ -41,8 +41,8 @@
       :alt="true"
       :imageBg="'#AB9389'"
       :image="require('../images/warehouse-lookbook-mobiles.png')"
-      :head="'Saved and pre-loaded looks.'"
-      :text="'To enhance the shopping experience of the app, both curated content and the ability to save user generated content had to be integrated into the experience.  Pre-loaded looks and saved looks really enhance the experience to encourage users to return and always feel there is fresh content.'"
+      :head="'Simplified mobile journey for a more shoppable experience.'"
+      :text="'A simplified experience with swipable imagery and shoppable overlay gave customers a quicker route to shop imagery on a smaller screen.'"
     />
 
    <NextProject

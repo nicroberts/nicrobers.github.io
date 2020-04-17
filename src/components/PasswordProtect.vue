@@ -44,7 +44,7 @@
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background: #F2F2F2;
+  background: #C8C1BB;
   z-index: 100;
 }
 
@@ -89,11 +89,13 @@ button {
   border: 1px solid #A0A0A0;
   border-left: none;
   cursor: url(../images/hover.png), pointer; 
+  font-family: 'Roboto-bold', sans-serif;
 }
 
 p {
   margin: 10px 0 0 0;
   font-size: 12px;
+  font-family: 'Roboto-bold', sans-serif;
   opacity: 0;
   transition: opacity .5s ease;
 }

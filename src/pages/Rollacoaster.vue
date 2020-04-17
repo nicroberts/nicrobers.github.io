@@ -6,7 +6,7 @@
       :title="'Rollacoaster.'"
       :categories="'PUBLICATION DESIGN   |   PRINT DESIGN'"
       :sub="'Magazine Issue 8.'"
-      :para="'Online shoppable lookbook design for Warehouse AW14 Collection. The desktop design offers an easily navigated lookbook that once interacted with, splits into detailed product imagery with the ability to add products directly to bag.'"
+      :para="'Magazine layout design for Rollacoaster Issue 8.  As Art Editor I created a visual language, unique to each issue, and experimented with layouts for the magazine.'"
       :bg="'#fff'"
     />
 
@@ -22,7 +22,7 @@
       :imageBg="'#AB9389'"
       :image="require('../images/rollacoaster3.jpg')"
       :head="'The Approach.'"
-      :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
+      :text="`To give the magazine a 'zine' feel I experimented with typography, materials and techniques to create interesting layouts for the magazine.`"
     />
 
    <TwoCentredImages 
@@ -33,8 +33,8 @@
      />
 
     <PageHeading 
-      :sub="'Simplifying the UI design, creating a well designed and easy to use interface.'"
-      :para="'Icons where very important in this project, being that there had to be around 30, each had to remain clear at small sizes and feel ASOS branded.  The focus of the UI had to be the camera element, so although important the menu needed to remain understated and easy to use.'"
+      :sub="'Using not only digital techniques but also expeirmenting with physical techniques gave the magazine a tactile feel.'"
+      :para="'Each page was created using a range of physicla techniques, including collaging, painting, scanning, minipulating paper and photographing the results, before finally scanning them in and editing digitally.   I really enjoyed this project as it gave me the chance to push the boundries of what could be created, treating each page like a piece of art.'"
       :bg="'#fff'"
     />
 
@@ -50,8 +50,8 @@
       :alt="true"
       :imageBg="'#E2DCD4'"
       :image="require('../images/rollacoaster8.jpg')"
-      :head="'The Approach.'"
-      :text="'Starting completely from scratch from the user journey, wireframes and finally the applied UI, ensuring a clean and simple experience for the user.'"
+      :head="'Bringing the final publication together.'"
+      :text="'I assisted in the comissioning of photographers and collaborators for the magazine, ensuring they were right for the issue and it all came together cohesively.  Finally I press-passed the final print run to ensure the final result was to high standard.'"
     />
 
    <NextProject
